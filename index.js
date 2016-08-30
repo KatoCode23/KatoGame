@@ -3,19 +3,24 @@ var gainMuscleArray = ["Lift Safe", "Lift Heavy", "Protein", "Core Lifts",];
 var safeList = ["Warm Up", "Stretch", "Form", "Concentrate", ];
 var weightlossArray = ["Walking", "Running", "Cardio", "Macros", "Swimming", "JumpRope","Circuit", "High-Intensity", "Calories",];
 var clientListArray = [];
-
+var userName
 var state = "none";
+var States = {gainMuscle: "bigger" , weightLoss: "smaller" , safety: "cleaner"
+
+};
+
+
 $('#gainMuscle').click(function(){
   emptyMyContainer()
   console.log(state);
-  if (state === "gainMuscle"){
+  if (States.gainMuscle === state  ){
     emptyMyContainer(true)
-  }else if( state != "gainMuscle"){
+  }else if( state != States.gainMuscle){
     for(var i=0; i < gainMuscleArray.length; i++){
       $("#exercise-list").append("<li>" + gainMuscleArray[i] + "<li/>");
       $('h1').css('display', 'block');
     }
-    state = "gainMuscle";
+    state = States.gainMuscle;
   }
 });
 
@@ -23,34 +28,46 @@ $('#gainMuscle').click(function(){
 $('#weightLoss').click(function(){
   emptyMyContainer()
   console.log(state);
-  if (state === "weightLoss"){
+  if (States.weightLoss === state){
     emptyMyContainer(true)
-  } else if(state != "weightLoss"){
+  } else if(state != States.weightLoss){
     for(var i=0; i < weightlossArray.length; i++){
       $("#exercise-list").append("<li>" + weightlossArray[i] + "<li/>");
       $('h1').css('display', 'block');
     }
-    state = "weightLoss";
+    state = States.weightLoss;
   }
 });
 
 $('#safety').click(function(){
   emptyMyContainer()
   console.log(state);
-  if (state === "safety"){
+  if (States.safety === state){
     emptyMyContainer(true)
-  } else if(state != "safety"){
+  } else if(state != States.safety){
     for(var i=0; i < safeList.length; i++){
       $("#exercise-list").append("<li>" + safeList[i] + "<li/>");
       $('h1').css('display', 'block');
     }
-    state= "safety";
+    state = States.safety;
   }
 });
 
-$('#client-list').click(function(){
-  console.log("Yo my DUDE! What are clicking about now?");
-})
+$('#my-form').submit(function(event){
+  event.preventDefault()
+  userName = $('#first-name').val()
+  userLastName = $('#last-name').val()
+  if(userName === "" || userLastName === ""){
+    console.log("HUMAN IS SMALL COMPARED TO ME");
+  }else{
+    $('header')[0].innerHTML = "Hello " + userName + " " + userLastName;
+    $('#my-form').hide();
+  }
+});
+
+
+
+
 
 // Our bitches
 function emptyMyContainer(resetState) {

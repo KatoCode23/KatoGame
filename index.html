@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+    <header></header>
   <div>
       <span id="weightLoss" class="buttonStyle">Weightloss</span>
       <span id="safety" class="buttonStyle">Safety</span>
@@ -16,9 +17,19 @@
 
         </ul>
     </div>
-    First Name: <input><br>
-    Last Name: <input><br>
-    <span id="client-list" class="client-list-style">Submit</span>
+    <form id="my-form">
+
+  <input class="input-text" placeholder="First Name" id="first-name" type="text"><br>
+  <input class="input-text" placeholder="Last Name" id="last-name" type="text"><br>
+  <input class="input-text" placeholder="height" id="height" type="number"><br>
+  <input class="input-text" placeholder="weight" id="weight" type="number"><br>
+  
+
+
+
+
+    <input type="submit">
+    </form>
   </body>
 
   <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
