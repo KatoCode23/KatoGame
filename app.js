@@ -11,9 +11,10 @@ app.controller('myController', function($scope){
   $scope.myLists = [$scope.buttonList, $scope.weightLossList, $scope.muscleGainList, $scope.safeList];
 
   $scope.assholeClicked = function(){
-    console.log($scope.myLists);
-
+    console.log("Gotta go train, be back later");
 }
+
+
 });
 
 

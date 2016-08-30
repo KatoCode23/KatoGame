@@ -9,7 +9,13 @@
   <body ng-app="app" ng-controller="myController">
     <div>
       <span class="buttonStyle" ng-click="assholeClicked()" ng-repeat="buttonList in buttonList">
-  {{buttonList}}</span>
+        {{buttonList}}
+      </span>
+      <ul>
+        <li ng-repeat="weightLossList in weightLossList">{{weightLossList}}</li>
+        <li ng-repeat="safeList in safeList">{{safeList}}</li>
+        <li ng-repeat="muscleGainList in muscleGainList">{{muscleGainList}}</li>
+      </ul>
 
     </div>
   </body>
