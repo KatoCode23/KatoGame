@@ -2,11 +2,15 @@
 <html>
   <head>
     <title>KatoGame</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body>
+  <body ng-app="app" ng-controller="myController">
     <header></header>
-  <div>
+    <div>
+      <span>{{myName}}</span>
+      <input type="text" ng-model="myName">
       <span id="weightLoss" class="buttonStyle">Weightloss</span>
       <span id="safety" class="buttonStyle">Safety</span>
       <span id="gainMuscle" class="buttonStyle">Gain Muscle</span>
@@ -23,7 +27,7 @@
   <input class="input-text" placeholder="Last Name" id="last-name" type="text"><br>
   <input class="input-text" placeholder="height" id="height" type="number"><br>
   <input class="input-text" placeholder="weight" id="weight" type="number"><br>
-  
+
 
 
 
