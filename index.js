@@ -1,15 +1,3 @@
-
-var gainMuscleArray = ["Lift Safe", "Lift Heavy", "Protein", "Core Lifts",];
-var safeList = ["Warm Up", "Stretch", "Form", "Concentrate", ];
-var weightlossArray = ["Walking", "Running", "Cardio", "Macros", "Swimming", "JumpRope","Circuit", "High-Intensity", "Calories",];
-var clientListArray = [];
-var userName
-var state = "none";
-var States = {gainMuscle: "bigger" , weightLoss: "smaller" , safety: "cleaner"
-
-};
-
-
 $('#gainMuscle').click(function(){
   emptyMyContainer()
   console.log(state);
