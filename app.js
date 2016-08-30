@@ -2,20 +2,21 @@ var app = angular.module('app', []);
 
 app.controller('myController', function($scope){
 
+
   // ---------- Start code here ----------
-  /*$scope.buttonList = ['Weightloss', 'Safety!!', 'Muscle Gain'];
+  $scope.buttonList = ['Weightloss', 'Safety!!', 'Muscle Gain'];
   $scope.weightLossList = ['Diet','Cardio', 'Walking', 'Jogging', 'Running', 'Sprinting', 'Agility Drills', 'Boxing'];
   $scope.muscleGainList = ['Diet', 'Consistent Schedule', 'Lift Safe', 'Lift Heavy', 'Core Lifts'];
   $scope.safeList = ['Warm Up', 'Stretch', 'Form', 'Concentrate'];
+  $scope.myLists = [$scope.buttonList, $scope.weightLossList, $scope.muscleGainList, $scope.safeList];
+
   $scope.assholeClicked = function(){
+    console.log($scope.myLists);
 
-  console.log("Get em Kato....PBJS");
-
-}*/
-
-
-
+}
 });
+
+
 
 
 
