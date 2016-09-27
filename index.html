@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
 
   <body ng-app="app" ng-controller="myController">
+
     <div>
       <span class="buttonStyle" ng-if="button.ready === true" ng-click="clickOnCategory(button)" ng-repeat="button in buttonList">{{button.name}}
       </span>
       <ul  ng-repeat="list in buttonList | filter: {name: currentCategory}">
         <h1>{{list.name}}</h1>
-        <li ng-repeat="exercise in list.exercises">{{exercise}}</li>
+        <li ng-click="clickOnExercise(exercise)" ng-repeat="exercise in list.exercises">{{exercise.name}}</li>
+
       </ul>
 
     </div>
