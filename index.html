@@ -8,13 +8,11 @@
 
   <body ng-app="app" ng-controller="myController">
     <div>
-      <span class="buttonStyle" ng-click="assholeClicked()" ng-repeat="buttonList in buttonList">
-        {{buttonList}}
+      <span class="buttonStyle" ng-if="button.ready === true" ng-click="clickOnCategory(button)" ng-repeat="button in buttonList">{{button.name}}
       </span>
-      <ul>
-        <li ng-repeat="weightLossList in weightLossList">{{weightLossList}}</li>
-        <li ng-repeat="safeList in safeList">{{safeList}}</li>
-        <li ng-repeat="muscleGainList in muscleGainList">{{muscleGainList}}</li>
+      <ul  ng-repeat="list in buttonList | filter: {name: currentCategory}">
+        <h1>{{list.name}}</h1>
+        <li ng-repeat="exercise in list.exercises">{{exercise}}</li>
       </ul>
 
     </div>

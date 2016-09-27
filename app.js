@@ -1,39 +1,31 @@
 var app = angular.module('app', []);
 
 app.controller('myController', function($scope){
-
+$scope.currentCategory = "none";
 
   // ---------- Start code here ----------
-  $scope.buttonList = ['Weightloss', 'Safety!!', 'Muscle Gain'];
-  $scope.weightLossList = ['Diet','Cardio', 'Walking', 'Jogging', 'Running', 'Sprinting', 'Agility Drills', 'Boxing'];
-  $scope.muscleGainList = ['Diet', 'Consistent Schedule', 'Lift Safe', 'Lift Heavy', 'Core Lifts'];
-  $scope.safeList = ['Warm Up', 'Stretch', 'Form', 'Concentrate'];
-  $scope.myLists = [$scope.buttonList, $scope.weightLossList, $scope.muscleGainList, $scope.safeList];
+  $scope.buttonList = [
+    {name: 'Weightloss',
+    ready: true,
+    exercises: ['Diet','Cardio', 'Walking', 'Jogging', 'Running', 'Sprinting', 'Agility Drills', 'Boxing']
+  },
+    {name: 'Safety',
+    ready: true,
+    exercises: ['Warm Up', 'Stretch', 'Form', 'Concentrate']
+  },
+    {name: 'Muscle Gain',
+    ready: true,
+    exercises: ['Diet', 'Consistent Schedule', 'Lift Safe', 'Lift Heavy', 'Core Lifts']
+    }];
 
-  $scope.assholeClicked = function(){
-    console.log("Gotta go train, be back later");
+
+
+
+
+
+
+$scope.clickOnCategory = function(button){
+$scope.currentCategory = button.name;
+console.log(button.name);
 }
-
-
 });
-
-
-
-
-
-
-  /*$scope.myName = "Weightloss";
-
-
-  $scope.categoryList = function(){
-    console.log("You do what Kato tells you to");
-  }
-  $scope.myButton = "Safety!!"
-
-  $scope.askNoQuestions = function(){
-    console.log("Im sorry you said something???");
-  }
-  $scope.myClass = "Muscle Gain"
-  // ---------- End code here ----------
-
-});*/
