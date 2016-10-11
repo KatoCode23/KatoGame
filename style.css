@@ -27,8 +27,13 @@ display: block;
   border-color: #005F5F;
   padding: 20px;
   cursor: pointer;
-
 }
+
+.description{
+  font-size: 40px;
+  
+}
+
 
 .input-text {
   color: #08E6E6;

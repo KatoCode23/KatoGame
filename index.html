@@ -14,7 +14,7 @@
       <ul  ng-repeat="list in buttonList | filter: {name: currentCategory}">
         <h1>{{list.name}}</h1>
         <li ng-click="clickOnExercise(exercise)" ng-repeat="exercise in list.exercises">{{exercise.name}}</li>
-
+        <span class="description" ng-repeat="exercise in list.exercises | filter: {description: currentExercise}">{{exercise.description}}</span>
       </ul>
 
     </div>

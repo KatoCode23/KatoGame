@@ -2,7 +2,7 @@ var app = angular.module('app', []);
 
 app.controller('myController', function($scope){
 $scope.currentCategory = "none";
-$scope.currentExercise = "";
+$scope.currentExercise = "none";
 
   // ---------- Start code here ----------
   $scope.buttonList = [
@@ -12,7 +12,7 @@ $scope.currentExercise = "";
     {name: 'Cardio', available: true, description: 'Cardiovascular Exercise'},
     {name: 'Walking', available: true, description: 'Best form of cardio'},
     {name: 'Jogging', available: true, description: 'Great for recovery'},
-    {name: 'Running', available: true, description: 'Athletic training'},
+    {name: 'Running', available: true, description: 'Athletics'},
     {name: 'Sprinting', available: true, description: 'Super Athletic Training'},
     {name: 'Agility Drills', available: true, description: 'Sport Specific'},
     {name: 'Boxing', available: true, description: 'My favorite form of cardio'}]
@@ -45,7 +45,7 @@ console.log(button.name);
 }
 
 $scope.clickOnExercise = function(exercise){
-$scope.currentExercise = exercise.name;
+$scope.currentExercise = exercise.description;
 console.log(exercise.description);
 }
 });
