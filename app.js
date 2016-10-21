@@ -1,37 +1,53 @@
 var app = angular.module('app', []);
 
 app.controller('myController', function($scope){
-$scope.currentCategory = "none";
+$scope.currentCategory = {name: "none"};
 $scope.currentExercise = "none";
-
   // ---------- Start code here ----------
   $scope.buttonList = [
     {name: 'Weightloss',
-    ready: true,
-    exercises: [{name: 'Diet', available: true, description: 'Macros'},
-    {name: 'Cardio', available: true, description: 'Cardiovascular Exercise'},
-    {name: 'Walking', available: true, description: 'Best form of cardio'},
-    {name: 'Jogging', available: true, description: 'Great for recovery'},
-    {name: 'Running', available: true, description: 'Athletics'},
-    {name: 'Sprinting', available: true, description: 'Super Athletic Training'},
-    {name: 'Agility Drills', available: true, description: 'Sport Specific'},
-    {name: 'Boxing', available: true, description: 'My favorite form of cardio'}]
+    subname: 'Consume less calories then you burn dummy',
+    color: 'purple',
+    exercises: [{name: 'Diet', description: 'Macros'},
+    {name: 'Cardio', description: 'Cardiovascular Exercise'},
+    {name: 'Walking', description: 'Best form of cardio'},
+    {name: 'Jogging', description: 'Great for recovery'},
+    {name: 'Running', description: 'Athletics'},
+    {name: 'Sprinting', description: 'Super Athletic Training'},
+    {name: 'Agility Drills', description: 'Sport Specific'},
+    {name: 'Boxing', description: 'My favorite form of cardio'}]
   },
     {name: 'Safety',
-    ready: true,
-    exercises: [{name: 'Warm Up', available: true, description: 'Important for blood flow'},
-    {name: 'Stretch', available: true, description: 'Decreases recovery time and increases mobility'},
-    {name: 'Form', available: true, description: 'Important to maintain balance'},
-    {name: 'Concentrate', available: true, description: 'Last line of defense for safety'}]
+    subname: 'Dont drink and lift!!!',
+    color: 'yellow',
+    exercises: [{name: 'Warm Up', description: 'Important for blood flow'},
+    {name: 'Stretch', description: 'Decreases recovery time and increases mobility'},
+    {name: 'Form', description: 'Important to maintain balance'},
+    {name: 'Concentrate', description: 'Last line of defense for safety'}]
   },
     {name: 'Muscle Gain',
-    ready: true,
-    exercises: [{name: 'Diet', available: true, description: 'Macros'},
-    {name: 'Consistent Schedule', available: true, description: 'Most important part of gaining muscle'},
-    {name: 'Lift Safe', available: true, description: 'Tight grip'},
-    {name: 'Lift Heavy', available: true, description: 'Want bigger muscles? Get stronger'},
-    {name: 'Core Lifts', available: true, description: 'BenchPress and Squat'}]
+    subname: 'Protein and heavy lifting are the keys',
+    color: 'red',
+    exercises: [{name: 'Diet', description: 'Macros'},
+    {name: 'Consistent Schedule', description: 'Most important part of gaining muscle'},
+    {name: 'Lift Safe', description: 'Tight grip'},
+    {name: 'Lift Heavy', description: 'Want bigger muscles? Get stronger'},
+    {name: 'Core Lifts', description: 'BenchPress and Squat'}]
     }];
+
+$scope.chest = [
+  {name: 'beginner',
+  sets: 3,
+  reps: 15,
+  type: 'endurance',
+  class: 'feather',
+  workouts: [
+  {name: 'Push Ups' },
+  {name: 'Smith Machine BenchPress'},
+  {name: 'Barbell BenchPress'},
+  {name: 'Dumbbell BenchPress'}]
+  }];
+
 
 
 
@@ -40,8 +56,8 @@ $scope.currentExercise = "none";
 
 
 $scope.clickOnCategory = function(button){
-$scope.currentCategory = button.name;
-console.log(button.name);
+$scope.currentCategory = button;
+console.log(button);
 }
 
 $scope.clickOnExercise = function(exercise){
