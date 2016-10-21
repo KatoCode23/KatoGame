@@ -20,16 +20,15 @@
 
 
 
-      <input class="input-text" type="text" placeholder="First Name" ng-model="firstname">
-      <input class="input-text" type="text" placeholder="Last Name" ng-model="lastname">
+      <input class="input-text" type="text" placeholder="First Name">
+      <input class="input-text" type="text" placeholder="Last Name">
       <input class="input-text" type="number" placeholder="Height (inches)" min="0" ng-model="height">
       <input class="input-text" type="number" placeholder="Weight (pounds)" min="0" ng-model="weight">
-      <input class="input-text" type="number" placeholder="Age" min="0" ng-model="age">
-      <h1 ng-show="firstname">{{firstname}}</h1>
-      <h1 ng-show="lastname">{{lastname}}</h1>
-      <h2 ng-show="height">{{height}}</h2>
-      <h2 ng-show="weight">{{weight}}</h2>
-      <h2 ng-show="age">{{age}}</h2>
+      <input class="input-text" type="number" placeholder="Age" min="0">
+      <div ng-show="bmi(height,weight)"></div>
+
+
+
 
   </body>
 

@@ -3,6 +3,9 @@ var app = angular.module('app', []);
 app.controller('myController', function($scope){
 $scope.currentCategory = {name: "none"};
 $scope.currentExercise = "none";
+$scope.heightSquared = 0;
+$scope.bmiWeight = 0;
+$scope.answer = 0;
   // ---------- Start code here ----------
   $scope.buttonList = [
     {name: 'Weightloss',
@@ -51,10 +54,6 @@ $scope.chest = [
 
 
 
-
-
-
-
 $scope.clickOnCategory = function(button){
 $scope.currentCategory = button;
 console.log(button);
@@ -64,4 +63,14 @@ $scope.clickOnExercise = function(exercise){
 $scope.currentExercise = exercise.description;
 console.log(exercise.description);
 }
+
+$scope.bmi = function(height,weight){
+  $scope.heightSquared = height * height;
+  $scope.bmiWeight = weight;
+  $scope.answer = $scope.bmiWeight / $scope.heightSquared  * 703;
+  console.log($scope.heightSquared);
+  console.log($scope.bmiWeight);
+  console.log($scope.answer);
+}
+
 });
