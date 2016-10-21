@@ -12,7 +12,7 @@
       <span class="buttonStyle" ng-style="{'border-left-color': button.color}" ng-click="clickOnCategory(button)" ng-repeat="button in buttonList">{{button.name}}<div class="subname">{{button.subname}}</div>
       </span>
       <ul  ng-repeat="list in buttonList | filter: {name: currentCategory.name}">
-        <h1>{{list.name}}</h1>
+        <h1 ng-style="{'color': currentCategory.color}">{{list.name}}</h1>
         <li ng-click="clickOnExercise(exercise)" ng-style="{'color': currentCategory.color}" ng-repeat="exercise in list.exercises">{{exercise.name}}</li>
         <span class="description" ng-repeat="exercise in list.exercises | filter: {description: currentExercise}">{{exercise.description}}</span>
       </ul>
@@ -20,14 +20,16 @@
 
 
 
-       First Name: <input type="text" ng-model="firstname">
-       Last Name: <input type="text" ng-model="lastname">
-       Height: <input type="number" min="0" max="500" ng-model="height">
-       Weight: <input type="number" min="0" max="500" ng-model="weight">
+      <input class="input-text" type="text" placeholder="First Name" ng-model="firstname">
+      <input class="input-text" type="text" placeholder="Last Name" ng-model="lastname">
+      <input class="input-text" type="number" placeholder="Height (inches)" min="0" ng-model="height">
+      <input class="input-text" type="number" placeholder="Weight (pounds)" min="0" ng-model="weight">
+      <input class="input-text" type="number" placeholder="Age" min="0" ng-model="age">
       <h1 ng-show="firstname">{{firstname}}</h1>
       <h1 ng-show="lastname">{{lastname}}</h1>
       <h2 ng-show="height">{{height}}</h2>
       <h2 ng-show="weight">{{weight}}</h2>
+      <h2 ng-show="age">{{age}}</h2>
 
   </body>
 
