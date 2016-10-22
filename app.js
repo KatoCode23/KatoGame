@@ -71,6 +71,10 @@ $scope.bmi = function(height,weight){
   console.log($scope.heightSquared);
   console.log($scope.bmiWeight);
   console.log($scope.answer);
+  if($scope.answer > 0){
+    return true;
+  }
+
 }
 
 });

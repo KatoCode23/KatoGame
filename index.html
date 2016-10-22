@@ -25,7 +25,9 @@
       <input class="input-text" type="number" placeholder="Height (inches)" min="0" ng-model="height">
       <input class="input-text" type="number" placeholder="Weight (pounds)" min="0" ng-model="weight">
       <input class="input-text" type="number" placeholder="Age" min="0">
-      <div ng-show="bmi(height,weight)"></div>
+      <div ng-show="bmi(height,weight)">{{answer.toFixed(2)}}</div>
+
+
 
 
 
