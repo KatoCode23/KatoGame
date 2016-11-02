@@ -74,7 +74,5 @@ $scope.bmi = function(height,weight){
   if($scope.answer > 0){
     return true;
   }
-
 }
-
 });
