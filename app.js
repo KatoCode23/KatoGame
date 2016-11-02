@@ -38,18 +38,20 @@ $scope.answer = 0;
     {name: 'Core Lifts', description: 'BenchPress and Squat'}]
     }];
 
-$scope.chest = [
-  {name: 'beginner',
-  sets: 3,
-  reps: 15,
-  type: 'endurance',
-  class: 'feather',
-  workouts: [
-  {name: 'Push Ups' },
-  {name: 'Smith Machine BenchPress'},
-  {name: 'Barbell BenchPress'},
-  {name: 'Dumbbell BenchPress'}]
-  }];
+  $scope.workouts =[
+    {name: 'beginner', weightClass: 'feather'},
+    {name: 'intermediate', weightClass: 'light'},
+    {name: 'advanced', weightClass: 'light-heavy'},
+    {name: 'kato', weightClass: 'heavy'},
+    {name: 'legs'},
+    {name: 'chest'},
+    {name: 'back'},
+    {name: 'shoulders'},
+    {name: 'arms'},
+    {name: 'abs'},
+    {name: 'flexibility'},
+    {name: 'cardio'}
+    ];
 
 
 
@@ -76,5 +78,4 @@ $scope.bmi = function(height,weight){
   }
 
 }
-
 });
