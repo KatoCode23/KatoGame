@@ -1,31 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>KatoGame</title>
+    <title>TheReal643</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
 
   <body ng-app="app" ng-controller="myController">
+    <div>Hello Eric</div>
 
-    <div>
-      <span class="buttonStyle" ng-style="{'border-left-color': button.color}" ng-click="clickOnCategory(button)" ng-repeat="button in buttonList">{{button.name}}<div class="subname">{{button.subname}}</div>
-      </span>
-      <ul  ng-repeat="list in buttonList | filter: {name: currentCategory.name}">
-        <h1 ng-style="{'color': currentCategory.color}">{{list.name}}</h1>
-        <li ng-click="clickOnExercise(exercise)" ng-style="{'color': currentCategory.color}" ng-repeat="exercise in list.exercises">{{exercise.name}}</li>
-        <span class="description" ng-repeat="exercise in list.exercises | filter: {description: currentExercise}">{{exercise.description}}</span>
-      </ul>
-    </div>
-
-
-
-      <input class="input-text" type="text" placeholder="First Name">
-      <input class="input-text" type="text" placeholder="Last Name">
-      <input class="input-text" type="number" placeholder="Height (inches)" min="0" ng-model="height">
-      <input class="input-text" type="number" placeholder="Weight (pounds)" min="0" ng-model="weight">
-      <input class="input-text" type="number" placeholder="Age" min="0">
-      <div class="description" ng-show="bmi(height,weight)">{{answer.toFixed(2)}}</div>
 
 
 
