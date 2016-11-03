@@ -14,3 +14,9 @@ body{
 img{
   padding-top: 21px;
 }
+
+span{
+  padding: 10px;
+  color: black;
+  background-color: pink;
+}
