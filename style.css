@@ -6,3 +6,11 @@ body{
   font-family: Arial;
   cursor: pointer;
 }
+
+.hello{
+  padding: 13px;
+
+}
+img{
+  padding-top: 21px;
+}
