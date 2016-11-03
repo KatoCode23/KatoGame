@@ -1,26 +1,15 @@
 body{
-  background: white;
+  background-color: white;
   padding: 50px;
   text-align: center;
   color: pink;
   font-family: Arial;
   cursor: pointer;
 }
-
-.hello{
-  padding: 13px;
-
-}
-img{
-  padding-top: 21px;
+header{
+  width: 100%;
 }
 
-span{
-  padding: 10px;
-  color: black;
-  background-color: pink;
-
-}
 .background-image{
   background-size: cover;
   background-image: url(NoellePuck/background.jpg);
