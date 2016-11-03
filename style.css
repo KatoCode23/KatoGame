@@ -19,4 +19,9 @@ span{
   padding: 10px;
   color: black;
   background-color: pink;
+
+}
+.background-image{
+  background-size: cover;
+  background-image: url(NoellePuck/background.jpg);
 }
