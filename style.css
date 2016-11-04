@@ -40,3 +40,9 @@ footer{
   color: grey;
   text-align: center;
 }
+
+span.fa{
+  font-size: 30px;
+  padding: 10px;
+  display: inline-block;
+}
