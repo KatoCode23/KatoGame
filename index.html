@@ -19,14 +19,16 @@
     </div>
 
 
-
-      <input class="input-text" type="text" placeholder="First Name">
-      <input class="input-text" type="text" placeholder="Last Name">
-      <input class="input-text" type="number" placeholder="Height (inches)" min="0" ng-model="height">
-      <input class="input-text" type="number" placeholder="Weight (pounds)" min="0" ng-model="weight">
-      <input class="input-text" type="number" placeholder="Age" min="0">
+      <form  ng-model="myForm">
+      <input class="input-text" type="text" placeholder="First Name" required />
+      <input class="input-text" type="text" placeholder="Last Name" required />
+      <input class="input-text" type="number" placeholder="Height (inches)" min="0" ng-model="height" required />
+      <input class="input-text" type="number" placeholder="Weight (pounds)" min="0" ng-model="weight" required />
+      <input class="input-text" type="number" placeholder="Age" min="0" required />
+      <button ng-click="submitForm()" ng-disabled="my-form.$invalid">Submit</button>
       <div ng-show="bmi(height,weight)">{{answer.toFixed(2)}}</div>
-      <div>{{workouts}}</div>
+      </form>
+
 
 
 

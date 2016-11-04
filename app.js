@@ -38,6 +38,11 @@ $scope.answer = 0;
     {name: 'Core Lifts', description: 'BenchPress and Squat'}]
     }];
 
+  $scope.responseList = [{lose: 'I suggest you choose the weightloss button',
+  gain: 'I suggest you choose the muscle gain button',
+  safe: 'You have your choice of button! Remember SAFETY FIRST'
+  }];
+
   $scope.workouts =[
     {name: 'beginner', weightClass: 'feather'},
     {name: 'intermediate', weightClass: 'light'},
@@ -76,6 +81,14 @@ $scope.bmi = function(height,weight){
   if($scope.answer > 0){
     return true;
   }
+}
+$scope.submitForm = function(){
+      if($scope.answer < 19){
+        console.log('Skinny Mini!!!')
+      }if($scope.answer > 25){
+        console.log('Hey Fatty!!!');
+      }
+
 
 }
 });
