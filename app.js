@@ -84,9 +84,11 @@ $scope.bmi = function(height,weight){
 }
 $scope.submitForm = function(){
       if($scope.answer < 19){
-        console.log('Skinny Mini!!!')
+        console.log('Skinny Mini!!!');
       }if($scope.answer > 25){
         console.log('Hey Fatty!!!');
+      }else if($scope.answer > 19 && $scope.answer < 25){
+        console.log('Keep up the good work!!!');
       }
 
 
