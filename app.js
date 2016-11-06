@@ -6,6 +6,7 @@ $scope.currentExercise = "none";
 $scope.heightSquared = 0;
 $scope.bmiWeight = 0;
 $scope.answer = 0;
+$scope.currentResponse = "none";
   // ---------- Start code here ----------
   $scope.buttonList = [
     {name: 'Weightloss',
@@ -38,10 +39,11 @@ $scope.answer = 0;
     {name: 'Core Lifts', description: 'BenchPress and Squat'}]
     }];
 
-  $scope.responseList = [{lose: 'I suggest you choose the weightloss button',
-  gain: 'I suggest you choose the muscle gain button',
-  safe: 'You have your choice of button! Remember SAFETY FIRST'
-  }];
+    $scope.responseList = [
+    {name: 'I suggest you choose the weightloss category'},
+    {name: 'I suggest you choose the muscle gain category'},
+    {name: 'You have your choice of category! Remember SAFETY FIRST'}
+    ];
 
   $scope.workouts =[
     {name: 'beginner', weightClass: 'feather'},
@@ -82,15 +84,22 @@ $scope.bmi = function(height,weight){
     return true;
   }
 }
-$scope.submitForm = function(){
-      if($scope.answer < 19){
-        console.log('Skinny Mini!!!');
-      }if($scope.answer > 25){
-        console.log('Hey Fatty!!!');
-      }else if($scope.answer > 19 && $scope.answer < 25){
-        console.log('Keep up the good work!!!');
-      }
 
+$scope.submitForm = function(response){
+  $scope.currentResponse = response;
+  console.log(response);
 
 }
+
+
+/*$scope.currentResponse = $scope.responseList;
+
+      if($scope.answer < 19){
+        console.log($scope.currentResponse[1]);
+      }if($scope.answer > 25){
+        console.log($scope.currentResponse[0]);
+      }else if($scope.answer > 19 && $scope.answer < 25){
+        console.log($scope.currentResponse[2]);
+      }*/
+
 });

@@ -74,3 +74,13 @@ h1{
   padding: 20px;
   cursor: pointer;
 }
+
+.submit{
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  border: 1px solid;
+  border-color: #005F5F;
+  padding: 10px;
+  cursor: pointer;
+}
