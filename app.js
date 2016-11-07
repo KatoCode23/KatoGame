@@ -86,20 +86,16 @@ $scope.bmi = function(height,weight){
 }
 
 $scope.submitForm = function(response){
-  $scope.currentResponse = response;
-  console.log(response);
 
-}
-
-
-/*$scope.currentResponse = $scope.responseList;
+response = $scope.responseList;
 
       if($scope.answer < 19){
-        console.log($scope.currentResponse[1]);
+        console.log(response[1]);
       }if($scope.answer > 25){
-        console.log($scope.currentResponse[0]);
+        console.log(response[0]);
       }else if($scope.answer > 19 && $scope.answer < 25){
-        console.log($scope.currentResponse[2]);
       }*/
-
+        console.log(response[2]);
+      }
+}
 });
