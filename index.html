@@ -26,7 +26,8 @@
       <input class="input-text" type="number" placeholder="Weight (pounds)" min="0" ng-model="weight" required />
       <input class="input-text" type="number" placeholder="Age" min="0" required />
       <span  class="submit" ng-click="submitForm(response)" ng-disabled="myForm.$invalid">Submit</span>
-      <span ng-repeat="response in responseList">{{response.name}}</span>
+      <span ng-repeat="response in responseList | ">{{response.name}}</span>
+      <span>Hello!!!!</span>
 
       <div ng-show="bmi(height,weight)">{{answer.toFixed(2)}}</div>
      </form>
