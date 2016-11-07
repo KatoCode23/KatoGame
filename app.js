@@ -94,7 +94,6 @@ response = $scope.responseList;
       }if($scope.answer > 25){
         console.log(response[0]);
       }else if($scope.answer > 19 && $scope.answer < 25){
-      }*/
         console.log(response[2]);
       }
 }
