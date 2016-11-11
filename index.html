@@ -5,11 +5,17 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  </head>
 
   <body ng-app="app" ng-controller="myController">
 
     <div>
-      <span class="buttonStyle" ng-style="{'border-left-color': button.color}" ng-click="clickOnCategory(button)" ng-repeat="button in buttonList">{{button.name}}<div class="subname">{{button.subname}}</div>
+      <span class="buttonStyle"
+            ng-style="{'border-left-color': button.color}"
+            ng-click="clickOnCategory(button)"
+            ng-repeat="button in buttonList">
+            {{button.name}}
+            <div class="subname">{{button.subname}}</div>
       </span>
       <ul  ng-repeat="list in buttonList | filter: {name: currentCategory.name}">
         <h1 ng-style="{'color': currentCategory.color}">{{list.name}}</h1>
@@ -18,25 +24,16 @@
       </ul>
     </div>
 
-
-      <form  ng-model="myForm">
-      <input class="input-text" type="text" placeholder="First Name" required />
-      <input class="input-text" type="text" placeholder="Last Name" required />
-      <input class="input-text" type="number" placeholder="Height (inches)" min="0" ng-model="height" required />
-      <input class="input-text" type="number" placeholder="Weight (pounds)" min="0" ng-model="weight" required />
-      <input class="input-text" type="number" placeholder="Age" min="0" required />
-      <span  class="submit" ng-click="submitForm(response)" ng-disabled="myForm.$invalid">Submit</span>
-      <span ng-repeat="response in responseList | ">{{response.name}}</span>
-      <span>Hello!!!!</span>
-
-      <div ng-show="bmi(height,weight)">{{answer.toFixed(2)}}</div>
-     </form>
-
-
-
-
-
-
+    <form  ng-model="myForm">
+      <input class="input-text" type="text" placeholder="First Name" ng-model="firstName" />
+      <input class="input-text" type="text" placeholder="Last Name" ng-model="lastName" />
+      <input class="input-text" type="number" placeholder="Height (inches)" min="0" ng-model="height" />
+      <input class="input-text" type="number" placeholder="Weight (pounds)" min="0" ng-model="weight" />
+      <input class="input-text" type="number" placeholder="Age" min="0" ng-model="age" />
+      <button  class="submit" ng-click="submitForm()" ng-disabled="!validateForm()">Submit</button>
+      <span>{{response.name}}</span>
+      <div>{{bmi}}</div>
+    </form>
 
   </body>
 
