@@ -1,25 +1,23 @@
 var app = angular.module('app', []);
 
 app.controller('myController', function($scope){
-$scope.currentSkill =  {name: "none"};
+$scope.currentCategory = {name: "none"};
 $scope.categoryList = [
   {name: 'about'},
   {name: 'skills',
-    [
-     talent: 'International Event Coordination',
-     talent: 'Social Media Strategy',
-     talent: 'Branding Development',
-     talent: 'Wedding Planner',
-     talent: 'Brand Collaboration',
-     talent: 'Fundraisers',
-     talent: 'Cooperate Events, Dinner Parties, Fashion Shows, Premiers',
-     talent: 'Creative Consulting',
-     talent: 'Publicity',
-     talent: 'Photo and Gallery Production',
-     talent: 'Book and Speaking Agent',
-     talent: 'Sponsorship'
-   ]
- },
+      talent: ['International Event Coordination',
+      'Social Media Strategy',
+      'Branding Development',
+      'Wedding Planner',
+      'Brand Collaboration',
+      'Fundraisers',
+      'Cooperate Events, Dinner Parties, Fashion Shows, Premiers',
+      'Creative Consulting',
+      'Publicity',
+      'Photo and Gallery Production',
+      'Book and Speaking Agent',
+      'Sponsorship']
+},
   {name: 'events'},
   {name: 'gratitude'},
   {name: 'gallery'},
@@ -29,9 +27,9 @@ $scope.categoryList = [
 ];
 
 
-$scope.categoryClick = function(menu) {
-  $scope.currentSkill = menu;
-  console.log(menu);
+$scope.categoryClick = function() {
+  console.log($scope.categoryList.name);
+
 }
 
 });
