@@ -20,6 +20,16 @@ header{
   padding: 50px;
 }
 
+a{
+  text-decoration: none;
+}
+
+a.fa{
+  color: white;
+  font-size: 35px;
+  padding: 5px;
+}
+
 /*.background-image{
   background-size: cover;
   background-image: url(NoellePuck/background.jpg);
@@ -62,5 +72,4 @@ p{
 
 i{
   color: black;
-
 }
