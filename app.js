@@ -14,7 +14,7 @@ $scope.categoryList = [
       ]
   },
   {
-  name: 'skills',
+   name: 'skills',
     talent: [
        {name: 'International Event Coordination'},
        {name: 'Social Media Srategy'},
