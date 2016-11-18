@@ -34,7 +34,10 @@ $scope.categoryList = [
    name: 'events'
  },
  {
-   name: 'gratitude'
+   name: 'gratitude',
+    talent: [
+      {name: 'clients'}
+    ]
  },
  {
    name: 'gallery'
