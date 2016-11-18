@@ -14,12 +14,12 @@
           <header>
               <span class="categoryStyle"
               ng-click="categoryClick(menu)"
-              ng-repeat="category in categoryList">{{category}}
+              ng-repeat="category in categoryList">{{category.name}}
               </span>
 
           </header>
-          <ul ng-repeat="skill in skills | filter: {name: currentSkill.name}">
-            <li>{{skill.name}}</li>
+          <ul>
+            <li></li>
           </ul>
 
           <img src="NoellePuck/1.jpg" style="width: 150px;height: 240px;" />
