@@ -31,8 +31,9 @@
       <input class="input-text" type="number" placeholder="Weight (pounds)" min="0" ng-model="weight" />
       <input class="input-text" type="number" placeholder="Age" min="0" ng-model="age" />
       <button  class="submit" ng-click="submitForm()" ng-disabled="!validateForm()">Submit</button>
+      <div>{{firstName}} {{lastName}} Your Body Mass Index Is: {{bmi}}</div>
       <span>{{response.name}}</span>
-      <div>{{bmi}}</div>
+
     </form>
 
   </body>
