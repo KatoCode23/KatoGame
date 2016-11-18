@@ -5,7 +5,13 @@ $scope.currentCategory = {name: "none"};
 
 $scope.categoryList = [
   {
-    name: 'about'
+    name: 'about',
+      talent: [
+        {name: 'Meet Noel'},
+        {name: 'Girl One'},
+        {name: 'Girl Two'},
+        {name: 'Kalen Norton'}
+      ]
   },
   {
   name: 'skills',
