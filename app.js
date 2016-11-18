@@ -1,10 +1,12 @@
 var app = angular.module('app', []);
 
 app.controller('myController', function($scope){
-$scope.currentCategory = "";
+$scope.currentCategory = {name: "none"};
 
 $scope.categoryList = [
-  {name: 'about'},
+  {
+    name: 'about'
+  },
   {
   name: 'skills',
     talent: [
@@ -21,25 +23,31 @@ $scope.categoryList = [
        {name: 'Book and Speaking Agent'},
        {name: 'Sponsorship'},
      ]
- }
- {
-  name: 'International Event Coordination'
  },
  {
-   name: 'Social Media Stradegy'}
-},
-  {name: 'events'},
-  {name: 'gratitude'},
-  {name: 'gallery'},
-  {name: 'words of wisdom'},
-  {name: 'favorite things'},
-  {name: 'contact'}
+   name: 'events'
+ },
+ {
+   name: 'gratitude'
+ },
+ {
+   name: 'gallery'
+ },
+ {
+   name: 'words of wisdom'
+ },
+ {
+   name: 'favorite things'
+ },
+ {
+   name: 'contact'
+ }
 ];
 
 
-$scope.categoryClick = function(){
-  console.log();
-
+$scope.categoryClick = function(menu){
+  $scope.currentCategory = menu;
+  console.log(menu);
 }
 
 });

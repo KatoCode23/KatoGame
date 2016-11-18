@@ -13,13 +13,13 @@
           <img src="NoellePuck/logo.PNG" style="width: 233px;height: 89px;" />
           <header>
               <span class="categoryStyle"
-              ng-click="categoryClick()"
+              ng-click="categoryClick(menu)"
               ng-repeat="category in categoryList">{{category.name}}
               </span>
 
           </header>
-          <ul>
-            <li></li>
+          <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
+            <li ng-repeat="skill in list.talent">{{skill.name}}</li>
           </ul>
 
           <img src="NoellePuck/1.jpg" style="width: 150px;height: 240px;" />
