@@ -11,7 +11,16 @@
     <div class="main-content">
 
           <img src="NoellePuck/logo.PNG" style="width: 233px;height: 89px;" />
-          <header><span class="categoryStyle" ng-click="categoryClick()" ng-repeat="category in categoryList">{{category}}</span></header>
+          <header>
+              <span class="categoryStyle"
+              ng-click="categoryClick(menu)"
+              ng-repeat="category in categoryList">{{category}}
+              </span>
+
+          </header>
+          <ul ng-repeat="skill in skills | filter: {name: currentSkill.name}">
+            <li>{{skill.name}}</li>
+          </ul>
 
           <img src="NoellePuck/1.jpg" style="width: 150px;height: 240px;" />
           <p>Noel's niche for producing started over 10 years ago when she began working at Mercedes Benz Fashion Week.
