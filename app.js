@@ -7,6 +7,7 @@ app.controller('myController', function($scope) {
   $scope.bmiWeight = 0;
   $scope.answer = 0;
   $scope.currentResponse = "none";
+  $scope.currentMuscle = {name: "none"};
     // ---------- Start code here ----------
   $scope.buttonList = [
     {
@@ -14,7 +15,7 @@ app.controller('myController', function($scope) {
       subname: 'Consume less calories then you burn dummy',
       color: 'purple',
       exercises: [
-        {name: 'Diet', description: 'Macros'},
+        {name: 'Diet', description: 'Calories in Calories Out.'},
         {name: 'Cardio', description: 'Cardiovascular Exercise'},
         {name: 'Walking', description: 'Best form of cardio'},
         {name: 'Jogging', description: 'Great for recovery'},
@@ -56,19 +57,109 @@ app.controller('myController', function($scope) {
   ];
 
   $scope.workouts = [
-    {name: 'beginner', weightClass: 'feather'},
-    {name: 'intermediate', weightClass: 'light'},
-    {name: 'advanced', weightClass: 'light-heavy'},
-    {name: 'kato', weightClass: 'heavy'},
-    {name: 'legs'},
-    {name: 'chest'},
-    {name: 'back'},
-    {name: 'shoulders'},
-    {name: 'arms'},
-    {name: 'abs'},
-    {name: 'flexibility'},
-    {name: 'cardio'}
+
+    {
+      name: 'legs',
+      beginner: [
+        {name: 'BodyWeight Squats'},
+        {name: 'BodyWeight Lunges'},
+        {name: 'BodyWeight Side Lunges'}
+      ],
+      intermediate: [
+        {name: 'BodyWeight Jump Squats'},
+        {name: 'BodyWeight Jump Lunges'},
+        {name: 'BodyWeight Skater Jumps'}
+      ],
+      advanced: [
+        {name: 'Smith Machine Squats'},
+        {name: 'Smith Machine Lunges'},
+        {name: 'Machine Leg Press'},
+        {name: 'Kettle Bell Squats'},
+        {name: 'Machine Adductors'},
+        {name: 'Machine Abductors'},
+        {name: 'Machine Calf Raises'}
+      ],
+      kato: [
+        {name: 'Weighted Barbell Squats'},
+        {name: 'Weighted Barbell Lunges'},
+        {name: 'Weighted Barbell Front Squats'},
+        {name: 'Weighted Barbell Step Ups'},
+        {name: 'Weighted Dumbbell Step Ups'},
+        {name: 'Deadlifts'},
+        {name: 'Straight Leg Deadlifts'},
+        {name: 'Weighted Dumbbell Squats'},
+        {name: 'Weighted Dumbbell Lunges'},
+        {name: 'Weighted Barbell Calf Raises'},
+        {name: 'Weighted Dumbbell Calf Raises'}
+      ]
+    },
+    {
+      name: 'chest',
+      beginner: [
+        {name: 'Knee Push Ups'},
+        {name: 'Regular Push Ups'},
+        {name: 'Diamond Push Ups'},
+        {name: 'Wide Push Push Ups'},
+        {name: 'Inclined Push Ups'}
+      ],
+      intermediate: [
+        {name: 'Jump Push Ups'},
+        {name: '5 Second Push Ups'},
+        {name: 'Jump and Clap Push Ups'}
+      ],
+      advanced: [
+        {name: 'One Arm Push Ups'},
+        {name: 'Smith Machine BenchPress'},
+        {name: 'Smith Machine Incline BenchPress'},
+        {name: 'Smith Machine Decline BenchPress'},
+        {name: 'Free Range of Motion Cable Fly'},
+        {name: 'Light 12-15 Rep Dumbbell BenchPress'},
+        {name: 'Light 12-15 Rep Dumbbell Incline BenchPress'},
+        {name: 'Light 12-15 Rep Dumbbell Decline BenchPress'},
+        {name: 'Light 12-15 Rep Dumbbell Fly'},
+        {name: 'Light 12-15 Rep Dumbbell Incline Fly'},
+        {name: 'Light 12-15 Rep Dumbbell Decline Fly'},
+        {name: 'Light 12-15 Rep Dumbbell BenchPress with a Twist at the Top of Each Rep'},
+        {name: 'Light 12-15 Rep Dumbbell Incline BenchPress with a Twist at the Top of Each Rep'},
+        {name: 'Light 12-15 Rep Dumbbell Decline BenchPress with a Twist at the Top of Each Rep'}
+      ],
+      kato: [
+        {name: 'Barbell BenchPress'},
+        {name: 'Barbell Incline BenchPress'},
+        {name: 'Barbell Decline BenchPress'},
+        {name: 'Free Range of Motion Cable Incline Fly'},
+        {name: 'Heavy 6-10 Rep Dumbbell BenchPress'},
+        {name: 'Heavy 6-10 Rep Dumbbell Incline BenchPress'},
+        {name: 'Heavy 6-10 Rep Dumbbell Decline BenchPress'},
+        {name: 'Heavy 6-10 Rep Dumbbell Fly'},
+        {name: 'Heavy 6-10 Rep Dumbbell Incline Fly'},
+        {name: 'Heavy 6-10 Rep Dumbbell Decline Fly'},
+        {name: 'Heavy 6-10 Rep Dumbbell BenchPress with a Twist at the Top of Each Rep'},
+        {name: 'Heavy 6-10 Rep Dumbbell Incline BenchPress with a Twist at the Top of Each Rep'},
+        {name: 'Heavy 6-10 Rep Dumbbell Decline BenchPress with a Twist at the Top of Each Rep'}
+      ]
+    },
+    {
+      name: 'back'
+    },
+    {
+      name: 'shoulders'
+    },
+    {
+      name: 'arms'
+    },
+    {
+      name: 'abs'
+    },
+    {
+      name: 'flexibility'
+    },
+    {
+      name: 'cardio'
+    }
   ];
+
+  console.log($scope.workouts);
 
   $scope.clickOnCategory = function(button){
     $scope.currentCategory = button;
@@ -111,4 +202,10 @@ app.controller('myController', function($scope) {
       return false;
     }
   }
+
+  $scope.pickMuscleGroup = function (muscle) {
+    $scope.currentMuscle = muscle;
+    console.log(muscle);
+  }
+
 });

@@ -84,3 +84,8 @@ h1{
   padding: 10px;
   cursor: pointer;
 }
+.muscle-group{
+  color: green;
+  display: inline-block;
+  padding: 6px;
+}
