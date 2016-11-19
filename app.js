@@ -8,9 +8,7 @@ $scope.categoryList = [
     name: 'about',
       talent: [
         {name: 'Meet Noel'},
-        {name: 'Girl One'},
-        {name: 'Girl Two'},
-        {name: 'Kalen Norton'}
+        {name: 'Meet the Team'}
       ]
   },
   {
@@ -31,7 +29,27 @@ $scope.categoryList = [
      ]
  },
  {
-   name: 'events'
+   name: 'events',
+    talent: [
+      {name: 'Audio/Visual'},
+      {name: 'Budget Planning'},
+      {name: 'Catering Consultation'},
+      {name: 'Decor Selection'},
+      {name: 'Entertaiment'},
+      {name: 'Floral'},
+      {name: 'Guest Gifts'},
+      {name: 'Hotel Room Blocks'},
+      {name: 'Itineraries'},
+      {name: 'Invitations'},
+      {name: 'Lighting and Sound'},
+      {name: 'Onsite Management'},
+      {name: 'Photography'},
+      {name: 'Program'},
+      {name: 'Rentals'},
+      {name: 'Transportation'},
+      {name: 'Venue Selection & Management'},
+      {name: 'Videography'}
+    ]
  },
  {
    name: 'gratitude',
