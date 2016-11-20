@@ -140,7 +140,52 @@ app.controller('myController', function($scope) {
       ]
     },
     {
-      name: 'back'
+      name: 'back',
+      beginner: [
+        {name: 'Knee Push Ups'},
+        {name: 'Regular Push Ups'},
+        {name: 'Diamond Push Ups'},
+        {name: 'Wide Push Push Ups'},
+        {name: 'Inclined Push Ups'}
+      ],
+      intermediate: [
+        {name: 'Resistance Assisted Pull Ups'},
+        {name: 'Resistance Assisted Chin Ups'},
+        {name: 'Pull Ups'},
+        {name: 'Pull Up Assist Machine'}
+      ],
+      advanced: [
+        {name: 'Pull Ups'},
+        {name: 'Chin Ups'},
+        {name: 'Hyperextensions'},
+        {name: 'Light 12-15 Rep Lat Pull Downs'},
+        {name: 'Light 12-15 Rep Reverse Grip Lat Pull Downs'},
+        {name: 'Light 12-15 Rep Close Grip Lat Pull Downs'},
+        {name: 'Light 12-15 Rep Seated Rows'},
+        {name: 'Light 12-15 Rep Angled Seated Rows'},
+        {name: 'Light 12-15 Rep '},
+        {name: 'Light 12-15 Rep Dumbbell Fly'},
+        {name: 'Light 12-15 Rep Dumbbell Incline Fly'},
+        {name: 'Light 12-15 Rep Dumbbell Decline Fly'},
+        {name: 'Light 12-15 Rep Dumbbell BenchPress with a Twist at the Top of Each Rep'},
+        {name: 'Light 12-15 Rep Dumbbell Incline BenchPress with a Twist at the Top of Each Rep'},
+        {name: 'Light 12-15 Rep Dumbbell Decline BenchPress with a Twist at the Top of Each Rep'}
+      ],
+      kato: [
+        {name: 'Barbell BenchPress'},
+        {name: 'Barbell Incline BenchPress'},
+        {name: 'Barbell Decline BenchPress'},
+        {name: 'Free Range of Motion Cable Incline Fly'},
+        {name: 'Heavy 6-10 Rep Dumbbell BenchPress'},
+        {name: 'Heavy 6-10 Rep Dumbbell Incline BenchPress'},
+        {name: 'Heavy 6-10 Rep Dumbbell Decline BenchPress'},
+        {name: 'Heavy 6-10 Rep Dumbbell Fly'},
+        {name: 'Heavy 6-10 Rep Dumbbell Incline Fly'},
+        {name: 'Heavy 6-10 Rep Dumbbell Decline Fly'},
+        {name: 'Heavy 6-10 Rep Dumbbell BenchPress with a Twist at the Top of Each Rep'},
+        {name: 'Heavy 6-10 Rep Dumbbell Incline BenchPress with a Twist at the Top of Each Rep'},
+        {name: 'Heavy 6-10 Rep Dumbbell Decline BenchPress with a Twist at the Top of Each Rep'}
+      ]
     },
     {
       name: 'shoulders'
