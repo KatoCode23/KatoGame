@@ -29,33 +29,10 @@ $scope.categoryList = [
      ]
  },
  {
-   name: 'events',
-    talent: [
-      {name: 'Audio/Visual'},
-      {name: 'Budget Planning'},
-      {name: 'Catering Consultation'},
-      {name: 'Decor Selection'},
-      {name: 'Entertaiment'},
-      {name: 'Floral'},
-      {name: 'Guest Gifts'},
-      {name: 'Hotel Room Blocks'},
-      {name: 'Itineraries'},
-      {name: 'Invitations'},
-      {name: 'Lighting and Sound'},
-      {name: 'Onsite Management'},
-      {name: 'Photography'},
-      {name: 'Program'},
-      {name: 'Rentals'},
-      {name: 'Transportation'},
-      {name: 'Venue Selection & Management'},
-      {name: 'Videography'}
-    ]
+   name: 'events'
  },
  {
-   name: 'gratitude',
-    talent: [
-      {name: 'clients'}
-    ]
+   name: 'gratitude'
  },
  {
    name: 'gallery'
@@ -71,6 +48,26 @@ $scope.categoryList = [
  }
 ];
 
+/*talent: [
+  {name: 'Audio/Visual'},
+  {name: 'Budget Planning'},
+  {name: 'Catering Consultation'},
+  {name: 'Decor Selection'},
+  {name: 'Entertaiment'},
+  {name: 'Floral'},
+  {name: 'Guest Gifts'},
+  {name: 'Hotel Room Blocks'},
+  {name: 'Itineraries'},
+  {name: 'Invitations'},
+  {name: 'Lighting and Sound'},
+  {name: 'Onsite Management'},
+  {name: 'Photography'},
+  {name: 'Program'},
+  {name: 'Rentals'},
+  {name: 'Transportation'},
+  {name: 'Venue Selection & Management'},
+  {name: 'Videography'}
+]*/
 
 $scope.categoryClick = function(menu){
   $scope.currentCategory = menu;
