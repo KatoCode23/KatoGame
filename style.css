@@ -78,3 +78,52 @@ ul{
   color: black;
   list-style-type: none;
 }
+
+.slideshow,
+.slideshow:after{
+  position: fixed;
+  bottom: 100px;
+  right: 65px;
+  z-index: 0px;
+}
+
+.slideshow:after{
+  content: '';
+  background: transparent url(NoellePuck/testimonial0.jpg) repeat bottom right;
+}
+
+.slideshow li span{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 100px;
+  right: 65px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 15s linear infinite 0s;
+}
+
+.slideshow li:nth-child(1) span{
+  background-image: url(NoellePuck/testimonial1.png);
+}
+
+.slideshow li:nth-child(2) span{
+  background-image: url(NoellePuck/testimonial3.png);
+  animation-delay: 5s;
+}
+
+.slideshow li:nth-child(3) span{
+  background-image: url(NoellePuck/testimonial4.jpg);
+  animation-delay: 10s;
+}
+
+@keyframes imageAnimation {
+    0% {opacity: 0; animation-timing-function: ease in;}
+    16% {opacity: 1; animation-timing-function: ease out;}
+    33% {opacity: 0; }
+
+}
