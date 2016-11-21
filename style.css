@@ -129,6 +129,7 @@ ul{
 }
 
 .testimonial-text-container{
+  border: solid black 10px;
 }
 
 .testimonial-container img{
@@ -138,5 +139,10 @@ ul{
   padding: 10px;
   border-radius: 100%;
   margin: 30px;
+}
+
+.testimonial-paragragh{
+  position: relative;
+  top: -190px;
   text-align: left;
 }

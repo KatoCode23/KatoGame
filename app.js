@@ -52,27 +52,32 @@ $scope.testimonialGallery = [
     {
       name: 'photo1',
       image: 'NoellePuck/testimonial0.jpg',
-      description: 'Noel Elie'
+      description: '​Working with Noel is a dream come true! Shes an impeccable event producer whos detail oriented, supportive, and forward­thinking. When I work with Noel, Im able to focus on what matters most, delivering my message. She takes care of the rest!'
     },
     {
       name: 'photo2',
       image: 'NoellePuck/testimonial1.png',
-      description: 'Something Else'
+      description: 'Noel Elie is the goddess of masterful organization and thoughtful execution. She pays such incredible attention to detail and has a remarkable way of keeping her cool regardless of the circumstances. She seeks to truly understand the needs of her client and delivers above and beyond the call of duty. She is a delightful spirit, a strategist, and forward thinking. Her peculiar talent for anticipating her clients needs is unparalleled. Noel & her team worked the launch of my book party sponsored by Morgan Stanley and Rebecca Minkoff and the night was incredible thanks to her meticulous care. Noel also produced a fundraiser for me that was a huge success!'
     },
     {
       name: 'photo3',
       image: 'NoellePuck/testimonial2.jpg',
-      description: 'Another Testiomonial'
+      description: 'Its such a pleasure to get to work with Noel & her team. Create Your Dream Year was a great success and we couldnt have done it without her! She is professional, creative, and passionate about what she does­ making what could be a stressful experience, quite a pleasure!'
     },
     {
       name: 'photo4',
       image: 'NoellePuck/testimonial3.png',
-      description: 'What do you mean There is another'
+      description: 'Noel makes me feel so entirely provided for! I never worried once during any of my events. She took care of absolutely every detail which allowed me to just be fully present and entirely there­ a rare and invaluable gift'
     },
     {
       name: 'photo5',
       image: 'NoellePuck/testimonial4.jpg',
-      description: 'Of course there is another one'
+      description: 'Working a full time job and growing a coaching practice allowed me ZERO time to plan and execute a charity fundraiser for 250+ people. Hiring Noel was the best possible thing I could have done! Her in­depth knowledge of event planning and execution, ability to negotiate contracts and pricing, target and enlist sponsors, and utilize her extensive network of connections ensured a VERY successful event and a new fundraising record for my charity fund! Whether it be a book launch, a fundraiser, or a client retreat, I will never have another event without Noel’s involvement!'
+    },
+    {
+      name: 'photo6',
+      image: 'NoellePuck/testimonial5.jpg',
+      description: 'Noel is an angel & an organizational ninja all rolled into one beautiful package. She is so masterful at creating the flow of an event that I am left to do what I do best without being distracted by the details that used to overwhelm me. If you are looking to create a flawless event, big or small, look no further! Noel Elie Productions is it!'
     }
 
 ];
