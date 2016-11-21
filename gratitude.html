@@ -1,1 +1,62 @@
-<div>Hello World</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Noelle Graditude</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://use.fontawesome.com/f6bd501eb7.js"></script>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+
+  <body class="background-image" ng-app="app" ng-controller="myController">
+    <div class="main-content">
+
+          <img src="NoellePuck/logo.PNG" style="width: 233px;height: 89px;" />
+          <header>
+              <span class="categoryStyle"
+              ng-click="categoryClick(menu)"
+              ng-repeat="menu in categoryList">{{menu.name}}
+              </span>
+
+          </header>
+          <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
+            <li ng-repeat="skill in list.talent">{{skill.name}}</li>
+          </ul>
+
+
+
+
+
+        <div ng-repeat="photo in testimonialGallery" class="testimonial-text-container">
+            <span class="testimonial-container">
+                  <img ng-src="{{photo.image}}" />
+
+           </span>
+       </div>
+
+
+    </div>
+
+
+
+    <footer>
+       <a href="http://facebook.com/noelelieproductions" target="_blank" class="fa fa-facebook"></a>
+       <a href="http://instagram.com/noel_elie" target="_blank" class="fa fa-instagram"></a>
+       <a href="http://twitter.com/noel_elie" target="_blank" class="fa fa-twitter"></a>
+       <a href="http://pinterest.com/noelelie" target="_blank" class="fa fa-pinterest"></a>
+       <a href="http://www.imdb.me/noelelie" target="_blank" class="fa fa-imdb"></a>
+
+
+   </footer>
+
+
+
+
+
+
+
+
+  </body>
+
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</html>

@@ -48,6 +48,36 @@ $scope.categoryList = [
  }
 ];
 
+$scope.testimonialGallery = [
+    {
+      name: 'photo1',
+      image: 'NoellePuck/testimonial0.jpg',
+      description: 'Noel Elie'
+    },
+    {
+      name: 'photo2',
+      image: 'NoellePuck/testimonial1.png',
+      description: 'Something Else'
+    },
+    {
+      name: 'photo3',
+      image: 'NoellePuck/testimonial2.jpg',
+      description: 'Another Testiomonial'
+    },
+    {
+      name: 'photo4',
+      image: 'NoellePuck/testimonial3.png',
+      description: 'What do you mean There is another'
+    },
+    {
+      name: 'photo5',
+      image: 'NoellePuck/testimonial4.jpg',
+      description: 'Of course there is another one'
+    }
+
+];
+
+
 /*talent: [
   {name: 'Audio/Visual'},
   {name: 'Budget Planning'},

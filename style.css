@@ -127,3 +127,16 @@ ul{
     33% {opacity: 0; }
 
 }
+
+.testimonial-text-container{
+}
+
+.testimonial-container img{
+  display: block;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 100%;
+  margin: 30px;
+  text-align: left;
+}
