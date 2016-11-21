@@ -79,6 +79,10 @@ ul{
   list-style-type: none;
 }
 
+h3{
+  text-align: left;
+}
+
 .slideshow,
 .slideshow:after{
   position: fixed;
@@ -145,4 +149,5 @@ ul{
   top: -250px;
   text-align: left;
   max-width: 300px;
+  color: black;
 }
