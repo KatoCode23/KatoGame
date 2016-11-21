@@ -129,7 +129,6 @@ ul{
 }
 
 .testimonial-text-container{
-  border: solid black 10px;
 }
 
 .testimonial-container img{
@@ -143,6 +142,7 @@ ul{
 
 .testimonial-paragragh{
   position: relative;
-  top: -190px;
+  top: -250px;
   text-align: left;
+  max-width: 300px;
 }

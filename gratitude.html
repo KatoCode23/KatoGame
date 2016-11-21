@@ -28,6 +28,7 @@
 
         <div ng-repeat="photo in testimonialGallery" class="testimonial-text-container">
             <span class="testimonial-container">
+                  <h3>{{photo.name}}</h3>
                   <img ng-src="{{photo.image}}" />
            </span>
            <p class="testimonial-paragragh">{{photo.description}}</p>
