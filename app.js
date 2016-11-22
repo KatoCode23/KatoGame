@@ -2,12 +2,15 @@ var app = angular.module('app', []);
 
 app.controller('myController', function($scope){
 $scope.currentCategory = {name: "none"};
-
+$scope.currentTeam = {name: "none"};
 $scope.categoryList = [
   {
     name: 'about',
       talent: [
-        {name: 'Meet Noel'},
+        {
+          name: 'Meet Noel',
+          about: 'Im a mover and a shaker who landed in NYC just 3 days after graduating  to pursue my dreams in the entertainment industry. Ive been a professional NYC based Actress for several years.My passion is being of service to those making a positive difference in the world,both in the entertainment industry and health & wellness space. Some of my clients include: NY Times Best Selling Authors, Spiritual teachers, Yogis, Speakers, Change Agents, Celebrities, Global Leaders, & more. I am driven to create beautiful platforms to help my clients expand their reach beyond their wildest dreams.Noel Elie Productions was created due to the high demand for for reasonably priced, professional, creative producers. Let us help you ease your mind by executing your every need effortlessly and in style.'
+        },
         {name: 'Meet the Team'}
       ]
   },
@@ -111,4 +114,8 @@ $scope.categoryClick = function(menu){
   console.log(menu);
 }
 
+$scope.meetWho = function (skill) {
+  $scope.currentTeam = skill;
+  console.log(skill);
+}
 });
