@@ -11,7 +11,10 @@ $scope.categoryList = [
           name: 'Meet Noel',
           about: 'Im a mover and a shaker who landed in NYC just 3 days after graduating  to pursue my dreams in the entertainment industry. Ive been a professional NYC based Actress for several years.My passion is being of service to those making a positive difference in the world,both in the entertainment industry and health & wellness space. Some of my clients include: NY Times Best Selling Authors, Spiritual teachers, Yogis, Speakers, Change Agents, Celebrities, Global Leaders, & more. I am driven to create beautiful platforms to help my clients expand their reach beyond their wildest dreams.Noel Elie Productions was created due to the high demand for for reasonably priced, professional, creative producers. Let us help you ease your mind by executing your every need effortlessly and in style.'
         },
-        {name: 'Meet the Team'}
+        {
+          name: 'Meet the Team',
+          about: 'Whatever it is we would like to say about our lovely team members'
+        }
       ]
   },
   {
@@ -32,7 +35,14 @@ $scope.categoryList = [
      ]
  },
  {
-   name: 'events'
+   name: 'events',
+    talent: [
+        {
+          name: 'Event Services',
+          about: 'Audio/Visual, Budget Planning, Catering Consultation, Decor Selection, Entertaiment, Floral, Guest Gifts, Hotel Room Blocks, Itineraries, Invitations, Lighting and Sound, Onsite Management, Photography, Program, Rentals,Transportation, Venue Selection & Management, Videography'
+        }
+      ]
+
  },
  {
    name: 'gratitude'
@@ -88,26 +98,7 @@ $scope.testimonialGallery = [
 ];
 
 
-/*talent: [
-  {name: 'Audio/Visual'},
-  {name: 'Budget Planning'},
-  {name: 'Catering Consultation'},
-  {name: 'Decor Selection'},
-  {name: 'Entertaiment'},
-  {name: 'Floral'},
-  {name: 'Guest Gifts'},
-  {name: 'Hotel Room Blocks'},
-  {name: 'Itineraries'},
-  {name: 'Invitations'},
-  {name: 'Lighting and Sound'},
-  {name: 'Onsite Management'},
-  {name: 'Photography'},
-  {name: 'Program'},
-  {name: 'Rentals'},
-  {name: 'Transportation'},
-  {name: 'Venue Selection & Management'},
-  {name: 'Videography'}
-]*/
+
 
 $scope.categoryClick = function(menu){
   $scope.currentCategory = menu;
