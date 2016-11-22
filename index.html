@@ -19,11 +19,11 @@
 
           </header>
           <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
-            <li ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}
+              <li ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+              <span ng-repeat="skill in list.talent | filter: {about: currentTeam.about}">{{skill.about}}</span>
 
-            </li>
-                <span ng-repeat="bio in list.talent">{{bio.about}}</span>
-          </ul>
+         </ul>
+
 
 
           <img src="NoellePuck/1.jpg" style="width: 150px;height: 240px;" />
