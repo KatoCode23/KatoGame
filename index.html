@@ -19,10 +19,10 @@
 
           </header>
           <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
-            <li ng-show="showme=true" ng-click="meetWho(skill)" ng-repeat="skill in list.talent | filter: {about: currentTeam.about}">{{skill.name}}
+            <li ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}
 
             </li>
-                <p ng-show="showme">{{skill.about}}</p>
+                <span ng-repeat="bio in list.talent">{{bio.about}}</span>
           </ul>
 
 
