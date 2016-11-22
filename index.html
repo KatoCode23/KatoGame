@@ -41,13 +41,13 @@
     <div>
     <div class="muscle-group" ng-click="pickMuscleGroup(muscle)" ng-repeat="muscle in workouts">{{muscle.name}}</div>
         <ul ng-repeat="list in workouts | filter: {name: currentMuscle.name}">
-          <li ng-repeat="muscle in list.beginner">{{muscle.name}}</li>
+          <li ng-click="levelOfTraining(muscle)" ng-repeat="muscle in traineeLevel">{{muscle.name}}
+              <span ng-repeat="muscle in workouts | filter: {name: currentMuscle.name}">{{muscle.name}}</span>
+          </li>
+
         </ul>
     </div>
-    <div ng-click="showme=true">Show</div>
-    <div ng-click="showme=false">Hide</div>
-      <p ng-if="showme">Show me the money</p>
-      <p ng-hide="showme">Show me the nothing</p>
+
 
 
 
