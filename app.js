@@ -38,6 +38,9 @@ $scope.categoryList = [
    name: 'events',
     talent: [
         {
+          name: 'Upcoming Events'
+        },
+        {
           name: 'Event Services',
           about: 'Audio/Visual, Budget Planning, Catering Consultation, Decor Selection, Entertaiment, Floral, Guest Gifts, Hotel Room Blocks, Itineraries, Invitations, Lighting and Sound, Onsite Management, Photography, Program, Rentals,Transportation, Venue Selection & Management, Videography'
         }
@@ -45,7 +48,17 @@ $scope.categoryList = [
 
  },
  {
-   name: 'gratitude'
+   name: 'gratitude',
+    talent: [
+      {
+        name: 'testimonials',
+        about: ''
+      },
+      {
+        name: 'clientele',
+        about:'Current & previous clientele:, NY Times Best Selling Author, Kimberly Snyder, NY Times Best Selling Author, Deepak Chopra, Celebrity Raw Chef & Author, Kristina "Fully Raw", NY Times Best Selling Author, Gabrielle Bernstein IMGs Mercedes Benz Fashion Week, The Daily Loves Mastin Kipp, NY Times Best Selling Author, Crazy Sexy Cancers Kris Carr, Meggan Watterson, Sheila Kelley’s S Factor Fitness, IntenSatis Patricia Moreno, Terri Cole Women’s Health Magazine, Mama Glow’s Latham Thomas, Committed Impulse Founder, Josh Pais, Joel Readence, Balloon Management, Vikaz, Soul Ku, GFI Group, Business Meets Spirituality, Alex Jamieson, Gry Sinding, REVEAL Conference (2013 & 2014), NYPS, The William Fund, Soul Empowered Retreats around the world, As seen on Shark Tank, PiperWai All Natural Deodorant, Peace Love and Cancer, Fearless Inventory, Leesa, Sapira'
+      }
+    ]
  },
  {
    name: 'gallery'
