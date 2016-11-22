@@ -115,7 +115,7 @@ $scope.categoryClick = function(menu){
 }
 
 $scope.meetWho = function (skill) {
-  $scope.currentTeam = skill;
+  $scope.currentTeam = skill.about;
   console.log(skill);
 }
 });

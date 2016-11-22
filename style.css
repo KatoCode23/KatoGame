@@ -132,6 +132,13 @@ h3{
 
 }
 
+.bio-container p{
+  position: relative;
+  text-align: center;
+  font-style: italic;
+
+}
+
 .testimonial-text-container{
 }
 
