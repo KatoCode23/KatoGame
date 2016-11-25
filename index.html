@@ -40,17 +40,11 @@
 
     <div>
     <div class="muscle-group" ng-click="pickMuscleGroup(muscle)" ng-repeat="muscle in workouts">{{muscle.name}}</div>
-        <ul ng-repeat="list in workouts | filter: {name: currentMuscle.name}">
-          <li ng-click="levelOfTraining(muscle)" ng-repeat="muscle in traineeLevel">{{muscle.name}}
-              <span ng-repeat="muscle in workouts | filter: {name: currentMuscle.name}">{{muscle.name}}</span>
-          </li>
+        <ul ng-repeat="muscle in workouts | filter: {name: currentMuscle.name}">
+             <li ng-click="levelOfTraining(level)" ng-repeat="level in traineeLevel">{{level.name}}</li>
 
         </ul>
     </div>
-
-
-
-
 
   </body>
 

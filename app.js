@@ -8,6 +8,7 @@ app.controller('myController', function($scope) {
   $scope.answer = 0;
   $scope.currentResponse = "none";
   $scope.currentMuscle = {name: "none"};
+  $scope.currentLevel = {name: "none"};
     // ---------- Start code here ----------
   $scope.buttonList = [
     {
@@ -260,11 +261,9 @@ app.controller('myController', function($scope) {
     console.log(muscle);
   }
 
-  $scope.levelOfTraining = function (muscle){
-    $scope.pickMuscleGroup();
-    $scope.currentMuscle = muscle;
-    console.log(muscle);
-
+  $scope.levelOfTraining = function (level){
+    $scope.currentLevel = level;
+    console.log(level);
   }
 
 });
