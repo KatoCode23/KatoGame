@@ -57,12 +57,6 @@ app.controller('myController', function($scope) {
     {name: 'You have your choice of category! Remember SAFETY FIRST'}
   ];
 
-  $scope.traineeLevel = [
-    {name: 'beginner'},
-    {name: 'intermediate'},
-    {name: 'advanced'},
-    {name: 'kato'}
-  ];
 
   $scope.workouts = [
 
@@ -212,6 +206,13 @@ app.controller('myController', function($scope) {
     }
   ];
 
+  $scope.traineeLevel = [
+    {name: 'beginner'},
+    {name: 'intermediate'},
+    {name: 'advanced'},
+    {name: 'kato'}
+  ]
+
   console.log($scope.workouts);
 
   $scope.clickOnCategory = function(button){
@@ -261,9 +262,9 @@ app.controller('myController', function($scope) {
     console.log(muscle);
   }
 
-  $scope.levelOfTraining = function (level){
-    $scope.currentLevel = level;
-    console.log(level);
+  $scope.levelOfTraining = function (ready){
+    $scope.currentLevel = ready;
+    console.log(ready);
   }
 
 });
