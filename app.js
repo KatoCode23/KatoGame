@@ -78,7 +78,7 @@ $scope.testimonialGallery = [
     {
       name: 'Kris Carr, New York Times best Selling Author',
       image: 'NoellePuck/testimonial0.jpg',
-      description: 'Working with Noel is a dream come true! Shes an impeccable event producer whos detail oriented, supportive, and forward­thinking. When I work with Noel, Im able to focus on what matters most, delivering my message. She takes care of the rest!'
+      description: 'Working with Noel is a dream come true! Shes an impeccable event producer whos detail oriented, supportive, and forward­ thinking. When I work with Noel, Im able to focus on what matters most, delivering my message. She takes care of the rest!'
     },
     {
       name: 'Latham Thomas, Speaker, Author, & Founder of Mama Glow',

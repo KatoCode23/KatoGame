@@ -19,26 +19,39 @@
 
           </header>
           <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
-                 <li ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+            <div class="menu-container">
+
+
+                 <li class="list-font" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
                   <span class="bio-container" ng-repeat="skill in list.talent | filter: {about: currentTeam}">
                         <p>{{skill.about}}</p>
 
-                  </span>
+
+                 </span>
+
+           </div>
          </ul>
 
 
-
-          <img src="NoellePuck/1.jpg" style="width: 150px;height: 240px;" />
-          <p>Noel's niche for producing started over 10 years ago when she began working at Mercedes Benz Fashion Week.
-          <br>With years of this experience, she gained an eye for detail and started producing events and photo shoots for some of the top names in the entertainment and health & wellness industry.
-          <br> We team up with incredibly talented florists, photographers, videographers, lighting technicians, venues, and more.
-          <br><i>Specializing in the Empowerment Space and Health & Wellness Arena, our Expertise include:</i>
-          <br>International Events, Retreats, Conferences, Book Launches, Premieres, Private Dinners, Concerts, Weddings, Photo Shoots, Vlogs, Video Content, Fundraisers, Branding, Social Media Development, & more.
-          <br><i>Every event is totally unique and custom­ designed for each client. We support events ranging from 30- ­1500 guests. We always combine passion with professionalism, efficiency, personality with creative originality,
-                 dreams with detail and perfection with celebration.</i>
-          <br>Our philosophy is to make your life as stress free as possible.
-          <br>Let us help you take your business to the next level, while making your vision a reality!</p>
+    <div class="border-pic">
+          <img src="NoellePuck/0.jpeg" style="width: 450px;height: 225px;margin: 15px;padding: 5px;" />
     </div>
+          <div class="fa fa-window-close" ng-click="showBio=false;"></div>
+          <div class="fa fa-eye" ng-click="showBio=true;" class="paragraph-container">
+
+                <p ng-hide="showBio"></p>
+
+                <p ng-show="showBio">Noel's niche for producing started over 10 years ago when she began working at Mercedes Benz Fashion Week.
+                <br>With years of this experience, she gained an eye for detail and started producing events and photo shoots for some of the top names in the entertainment and health & wellness industry.
+                <br> We team up with incredibly talented florists, photographers, videographers, lighting technicians, venues, and more.
+                <br><i>Specializing in the Empowerment Space and Health & Wellness Arena, our Expertise include:</i>
+                <br>International Events, Retreats, Conferences, Book Launches, Premieres, Private Dinners, Concerts, Weddings, Photo Shoots, Vlogs, Video Content, Fundraisers, Branding, Social Media Development, & more.
+                <br><i>Every event is totally unique and custom­ designed for each client. We support events ranging from 30- ­1500 guests. We always combine passion with professionalism, efficiency, personality with creative originality,
+                       dreams with detail and perfection with celebration.</i>
+                <br>Our philosophy is to make your life as stress free as possible.
+                <br>Let us help you take your business to the next level, while making your vision a reality!</p>
+          </div>
+  </div>
         <!-- Write your comments here <ul class="slideshow">
           <li><span>Image 1</span></li>
           <li><span>Image 2</span></li>
@@ -55,14 +68,7 @@
 
    </footer>
 
-
-
-
-
-
-
-
-  </body>
+</body>
 
   <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="index.js"></script>
