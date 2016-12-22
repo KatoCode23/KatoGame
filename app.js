@@ -2,12 +2,12 @@ var app = angular.module('app', []);
 
 app.controller('myController', function($scope){
 
-  scope.eleenHalvorsen = [
+  $scope.ericPringle = [
     {
       name: 'Eric Pringle'
     },
     {
-     jobTitle: 'CEO and Founder of the "Give a Glove Foundation"'
+     jobTitle: 'CEO and Founder of the Give a Glove Foundation'
     }
 
   ];
@@ -30,7 +30,7 @@ app.controller('myController', function($scope){
     },
     {
       category: 'Mantra/Mission Statement'
-    },
+    }
 
   ];
 

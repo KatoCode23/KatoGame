@@ -4,13 +4,30 @@
     <title>TheReal643</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script src="https://use.fontawesome.com/f6bd501eb7.js"></script>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
 
   <body ng-app="app" ng-controller="myController">
-    <div>Hello Eric</div>
-    <img src="EricPringle/EP1.jpg" style="width: 200px;height: 200px;" />
-    <img src="EricPringle/EP2.jpg" style="width: 200px;height: 200px;" />
-    <img src="EricPringle/EP3.jpg" style="width: 200px;height: 200px;" />
+    <div class="menu-holder">
+                 <div class="fa fa-bars"
+                       ng-click="drop=true">
+
+                         <div class="menu"
+                         ng-repeat="category in menu"
+                         ng-show="drop">
+                         {{category.category}}
+                         </div>
+                 </div>
+     </div>
+
+             <div class="close-menu-holder">
+                     <div class="fa fa-times" ng-click="drop=false"></div>
+            </div>
+
+
+             <img src="EricPringle/EP1.jpg" style="width: 200px;height: 200px;" />
+             <img src="EricPringle/EP2.jpg" style="width: 200px;height: 200px;" />
+             <img src="EricPringle/EP3.jpg" style="width: 200px;height: 200px;" />
 
 
 
