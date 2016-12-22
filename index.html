@@ -8,26 +8,31 @@
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
 
   <body ng-app="app" ng-controller="myController">
-    <div class="menu-holder">
-                 <div class="fa fa-bars"
-                       ng-click="drop=true">
 
-                         <div class="menu"
-                         ng-repeat="category in menu"
-                         ng-show="drop">
-                         {{category.category}}
-                         </div>
-                 </div>
-     </div>
-
-             <div class="close-menu-holder">
-                     <div class="fa fa-times" ng-click="drop=false"></div>
-            </div>
+<div class="content">
+        <div class="background-image">
 
 
-             <img src="EricPringle/EP1.jpg" style="width: 200px;height: 200px;" />
-             <img src="EricPringle/EP2.jpg" style="width: 200px;height: 200px;" />
-             <img src="EricPringle/EP3.jpg" style="width: 200px;height: 200px;" />
+
+                      <div class="menu-holder">
+                                   <div class="fa fa-bars"
+                                         ng-click="drop=true">
+
+                                           <div class="menu"
+                                           ng-repeat="category in menu"
+                                           ng-show="drop">
+                                           {{category.category}}
+                                           </div>
+                                   </div>
+                       </div>
+                       
+
+                                   <div class="close-menu-holder">
+                                           <div class="fa fa-times" ng-click="drop=false"></div>
+                                   </div>
+        </div>
+</div>
+
 
 
 
