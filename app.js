@@ -52,7 +52,8 @@ $scope.categoryList = [
     talent: [
       {
         name: 'testimonials',
-        about: ''
+        about: '',
+        link: '/gratitude.html'
       },
       {
         name: 'clientele',
@@ -110,16 +111,17 @@ $scope.testimonialGallery = [
 
 ];
 
+  $scope.categoryClick = function(menu){
+    $scope.currentCategory = menu;
+    console.log(menu);
+  }
 
-
-
-$scope.categoryClick = function(menu){
-  $scope.currentCategory = menu;
-  console.log(menu);
-}
-
-$scope.meetWho = function (skill) {
-  $scope.currentTeam = skill.about;
-  console.log(skill);
-}
+  $scope.meetWho = function (skill) {
+    if (skill.about) {
+      $scope.currentTeam = skill.about;
+    }
+    if (skill.link) {
+      window.open(skill.link,'_self');
+    }
+  }
 });
