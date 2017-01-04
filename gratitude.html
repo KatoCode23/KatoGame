@@ -11,7 +11,7 @@
   <body class="background-image" ng-app="app" ng-controller="myController">
     <div class="main-content">
 
-        <a href="/index.html">  <img src="NoellePuck/logo.PNG" style="width: 233px;height: 89px;" /></a>
+        <a href="index.html">  <img src="NoellePuck/logo.PNG" style="width: 233px;height: 89px;" /></a>
           <header>
               <span class="categoryStyle"
               ng-click="categoryClick(menu)"
@@ -20,7 +20,12 @@
 
           </header>
           <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
-            <li ng-repeat="skill in list.talent">{{skill.name}}</li>
+            <div class="menu-container">
+               <li class="list-font" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+                 <span class="bio-container" ng-repeat="skill in list.talent | filter: {about: currentTeam}">
+                       <p>{{skill.about}}</p>
+                 </span>
+            </div>
           </ul>
           <div class="testimonial-text-container">
                     <span class="testimonial-container">

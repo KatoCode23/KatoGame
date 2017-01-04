@@ -20,6 +20,8 @@ header{
   padding: 50px;
 }
 
+
+
 a{
   text-decoration: none;
 }
@@ -35,20 +37,25 @@ a.fa{
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(NoellePuck/background.jpg);
+  text-align: -webkit-center;
+  height: 320px;
 }
 
+.home-page-pic{
+  background-position: center;
+  background-size: cover;
+  background-image: url(NoellePuck/0.jpeg);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 300px;
+  border: transparent solid 10px;
+}
 
 .menu-container{
-  border: solid #f18dce 2px;
-  top: 0px;
-  left: 0px;
   position: relative;
   background-size: cover;
   background-color: white;
   padding: 10px;
-  border-bottom-right-radius: 50px;
-  border-top-left-radius: 50px;
-
 }
 
 
@@ -130,7 +137,6 @@ h3{
 
 .testimonial-text-container{
   height: 350px;
-
   text-align: left;
   background-position: center;
   position: relative;
@@ -221,23 +227,194 @@ h3{
   font-size: 15px;
 }
 
-@media (min-width: 0px)
+
+
+@media (min-width: 320px)
  and (max-width: 768px) {
   body{
-     background-color: red;
+     /*background-color: red;*/
      }
-   }
+.categoryStyle{
+    display: block;
+    font-size: 10px;
+    padding: 5px;
+     }
+.border-pic{
+    height: 150px;
+    width: 225px;
+     }
+.home-page-pic{
+    height: 125px;
+    width: 200px;
+    }
+.menu-container{
+    left: -15px;
+    }
+.testimonial-text-container{
+    overflow-y: scroll;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    }
+.testimonial-text-container::-webkit-scrollbar {
+    display: none;
+    }
+.testimonial-container img{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      background-size: contain;
+      top: 0;
+    }
+.paragraph-container1 p{
+      display: block;
+      text-align: left;
+      margin-left: 15px;
+      color: black;
+      top: 185px;
+      left: -35px;
+      width: 120px;
+      height: 150px;
+    }
 
-@media (min-width: 768px)
- and (max-width: 1400px) {
+.paragraph-container2 p{
+      display: block;
+      text-align: left;
+      color: black;
+      top: 660px;
+      left: -19px;
+      width: 120px;
+      height: 150px;
+    }
+
+.paragraph-container22 p{
+      display: block;
+      text-align: left;
+      margin-left: 15px;
+      color: black;
+      top: 185px;
+      left: -35px;
+      width: 120px;
+      height: 150px;
+
+    }
+
+.paragraph-container1 h1{
+      top: 100px;
+      left: 0;
+      color: black;
+      font-size: 20px;
+    }
+
+.paragraph-container1 h3{
+      top: 125px;
+      left: 0;
+      color: black;
+      font-size: 15px;
+    }
+
+.paragraph-container22 h1{
+      top: 95px;
+      left: 0;
+      color: black;
+      font-size: 20px;
+    }
+
+
+.paragraph-container22 h3{
+      top: 125px;
+      left: 0;
+      color: black;
+      font-size: 15px;
+    }
+}
+
+@media (min-width: 331px)
+ and (max-width: 351px) {
+
+.border-pic{
+    width: 270px;
+     }
+.paragraph-container2 p{
+    left: -83px;
+     }
+}
+
+@media (min-width: 352px)
+ and (max-width: 375px) {
+
+.border-pic{
+    width: 275px;
+     }
+}
+
+@media (min-width: 362px)
+ and (max-width: 375px) {
+
+.border-pic{
+    width: 300px;
+     }
+}
+
+@media (min-width: 376px)
+ and (max-width: 400px) {
+
+.border-pic{
+    width: 315px;
+     }
+}
+
+@media (min-width: 401px)
+ and (max-width: 425px) {
   body{
-     background-color: yellow;
+     /*background-color: purple;*/
      }
-   }
+.border-pic{
+    width: 325px;
+     }
+.paragraph-container2 p{
+    left: -83px;
+     }
+}
 
- @media (min-width: 1400px)
+@media (min-width: 426px)
+ and (max-width: 768px) {
+  body{
+     /*background-color: white;*/
+     }
+  .border-pic{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    left: 0;
+     }
+.paragraph-container2 p{
+    left: -426px;
+     }
+.home-page-pic{
+    width: 300px;
+    height: 178px;
+}
+}
+
+@media (min-width: 1400px)
+ and (max-width: 1900px) {
+body{
+     /*background-color: yellow;*/
+    }
+.paragraph-container2 p{
+    right: 500px;
+    }
+}
+
+ @media (min-width: 1900px)
   and (max-width: 2900px) {
-  body{
-      background-color: green;
-     }
-   }
+body{
+      /*background-color: green;*/
+      }
+.paragraph-container2 p{
+      left: -950px;
+      }
+}

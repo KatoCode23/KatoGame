@@ -53,7 +53,7 @@ $scope.categoryList = [
       {
         name: 'testimonials',
         about: '',
-        link: '/gratitude.html'
+        link: 'gratitude.html'
       },
       {
         name: 'clientele',
