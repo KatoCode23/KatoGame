@@ -54,12 +54,11 @@ a.fa{
 
 .home-page-pic{
   background-position: center;
-  background-size: cover;
-  background-image: url(NoellePuck/0.jpeg);
+  background-size: contain;
+  background-image: url(NoellePuck/2);
   background-repeat: no-repeat;
-  width: 500px;
   height: 300px;
-  border: transparent solid 10px;
+  position: relative;
 }
 
 .menu-container{
@@ -98,7 +97,10 @@ a.fa{
 }
 
 .categoryStyle:hover{
-  background-color: #edc3cc;
+  background-image: url(NoellePuck/7.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 footer{
@@ -254,9 +256,11 @@ h3{
      /*background-color: red;*/
      }
 .logo{
-    top: 24px;
-    width: 219px;
-    height: 124px;
+  top: 60px;
+  width: 219px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
      }
 .categoryStyle{
     display: block;
