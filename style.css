@@ -13,7 +13,7 @@ header{
   background-color: transparent;
   padding: 10px;
   border-top-style: solid;
-  border-color: #f18dce;
+  border-color: #edc3cc;
 }
 
 .main-content{
@@ -39,6 +39,17 @@ a.fa{
   background-image: url(NoellePuck/background.jpg);
   text-align: -webkit-center;
   height: 320px;
+}
+
+.logo{
+  width: 233px;
+  height: 125px;
+  position: relative;
+  top: 195px;
+  background-position: center;
+  background-size: cover;
+  text-align: -webkit-center;
+  background-image: url(NoellePuck/logo.png);
 }
 
 .home-page-pic{
@@ -86,8 +97,12 @@ a.fa{
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
+.categoryStyle:hover{
+  background-color: #edc3cc;
+}
+
 footer{
-  background-color: #f18dce;
+  background-color: #edc3cc;
   width: 100%;
   height: 75px;
   color: grey;
@@ -95,6 +110,10 @@ footer{
   bottom: 0;
   right: 0;
   position: relative;
+  background-image: url(NoellePuck/background.jpg);
+  background-size: cover;
+
+
 }
 
 span.fa{
@@ -233,6 +252,11 @@ h3{
  and (max-width: 768px) {
   body{
      /*background-color: red;*/
+     }
+.logo{
+    top: 24px;
+    width: 219px;
+    height: 124px;
      }
 .categoryStyle{
     display: block;
