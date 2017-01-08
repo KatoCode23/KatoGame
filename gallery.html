@@ -20,37 +20,25 @@
               ng-click="categoryClick(menu)"
               ng-repeat="menu in categoryList">{{menu.name}}
               </span>
-
           </header>
-          <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
+    <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
             <div class="menu-container">
-
-
-                 <li class="list-font" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+              <li class="list-font" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
                   <span class="bio-container" ng-repeat="skill in list.talent | filter: {about: currentTeam}">
                         <p>{{skill.about}}</p>
-
-
-                 </span>
+                  </span>
 
            </div>
-         </ul>
-
-
-          <div class="home-page-pic"></div>
-    <p class="bio">
-      Noel's niche for producing started over 10 years ago when she began working at Mercedes Benz Fashion Week.
-      <br>With years of this experience, she gained an eye for detail and started producing events and photo shoots for some of the top names in the entertainment and health & wellness industry.
-      <br> We team up with incredibly talented florists, photographers, videographers, lighting technicians, venues, and more.
-      <br><i>Specializing in the Empowerment Space and Health & Wellness Arena, our Expertise include:</i>
-      <br>International Events, Retreats, Conferences, Book Launches, Premieres, Private Dinners, Concerts, Weddings, Photo Shoots, Vlogs, Video Content, Fundraisers, Branding, Social Media Development, & more.
-      <br><i>Every event is totally unique and custom­ designed for each client. We support events ranging from 30- ­1500 guests. We always combine passion with professionalism, efficiency, personality with creative originality, dreams with detail and perfection with celebration.</i>
-      <br>Our philosophy is to make your life as stress free as possible.
-      <br>Let us help you take your business to the next level, while making your vision a reality!
-    </p>
-
-  </div>
-
+    </ul>
+    <span class="gallery-button fa fa-angle-right" id="next-button"></span>
+		   <span class="gallery-button fa fa-angle-left" id="prev-button"></span>
+    <div class="full-size-image">
+		<span class="close-button fa fa-times"></span>
+	</div>
+    <section>
+      <div class="picture-container">
+      </div>
+    </section>
 
     <footer>
        <a href="http://facebook.com/noelelieproductions" target="_blank" class="fa fa-facebook"></a>
@@ -58,9 +46,9 @@
        <a href="http://twitter.com/noel_elie" target="_blank" class="fa fa-twitter"></a>
        <a href="http://pinterest.com/noelelie" target="_blank" class="fa fa-pinterest"></a>
        <a href="http://www.imdb.me/noelelie" target="_blank" class="fa fa-imdb"></a>
-
-
    </footer>
+
+
 
 </body>
 
