@@ -13,7 +13,7 @@
   <body ng-app="app" ng-controller="myController">
     <div class="main-content">
           <div class="border-pic">
-          <div class="logo"></div>
+          <a href="index.html"><div class="logo"></div></a>
           </div>
             <header>
               <span class="categoryStyle"
@@ -26,7 +26,7 @@
             <div class="menu-container">
 
 
-                 <li class="list-font" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+                 <li class="list-font list-style" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
                   <span class="bio-container" ng-repeat="skill in list.talent | filter: {about: currentTeam}">
                         <p>{{skill.about}}</p>
 

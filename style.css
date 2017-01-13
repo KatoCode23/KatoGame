@@ -26,14 +26,20 @@ a{
   text-decoration: none;
 }
 
-a.fa{
-  color: white;
-  font-size: 35px;
-  padding: 5px;
-}
-
 h2{
   text-decoration: none;
+}
+
+.testimonial-text-container h1{
+  font-size: 25px;
+  font-style: italic;
+  color: black;
+}
+
+.testimonial-text-container h2{
+  font-size: 12px;
+  font-style: italic;
+  color: grey;
 }
 
 .border-pic{
@@ -104,12 +110,14 @@ footer{
   background-size: cover;
 }
 
-span.fa{
-  font-size: 30px;
+.fa-facebook, .fa-instagram, .fa-pinterest, .fa-twitter, .fa-imdb{
+  font-size: 35px;
   padding: 10px;
   display: inline-block;
   color: white;
 }
+
+
 
 p{
   max-width: 400px;
@@ -125,6 +133,7 @@ ul{
 .list-style{
   display: inline-flex;
   padding: 30px;
+
 }
 
 .gallery-button{
@@ -156,7 +165,7 @@ ul{
 
 .gallery-button:hover{
 	background-color: white;
-	color:black;
+	color: #black;
 }
 
 .gallery-button.turned-on{
@@ -230,34 +239,36 @@ ul{
 }
 
 .testimonial-pic-container{
-position: relative;
-border: solid black;
+  position: relative;
+  overflow: hidden;
 }
 
-.testimonial-pic-container .testimonial-pic{
-  width: 250px;
-	height: 250px;
+.testimonial-pic{
+  width: 200px;
+	height: 200px;
   border-radius: 50%;
 	background-size: cover;
 	background-position: center;
-	position: absolute;
-	overflow: hidden;
+	position: relative;
 	padding: 10px;
-	margin: 5px;
+	margin: 10px;
 	background-repeat: no-repeat;
-  display: inline-block;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
+  float: left;
 }
 
 .testimonial-paragragh{
-  display: inline-block;
   color: black;
   font-style: italic;
-  position: absolute;
-  top: 0px;
-  right: 25px;
+  position: relative;
+  top: 0;
+  margin: 10px;
+  padding: 5px;
+  float: right;
 }
+
+
 
 #next-button{
 	right: 0px;
@@ -282,7 +293,6 @@ border: solid black;
 }
 
 .testimonial-text-container{
-  height: 400px;
   text-align: left;
   background-position: center;
   position: relative;
@@ -290,9 +300,6 @@ border: solid black;
   padding: 5px;
   margin-top: 30px;
 }
-
-
-
 
 @media (min-width: 320px)
  and (max-width: 768px) {
