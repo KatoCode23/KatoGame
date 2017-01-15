@@ -11,7 +11,8 @@ $scope.categoryList = [
       talent: [
         {
           name: '~Meet Noel~',
-          about: 'Im a mover and a shaker who landed in NYC just 3 days after graduating  to pursue my dreams in the entertainment industry. Ive been a professional NYC based Actress for several years.My passion is being of service to those making a positive difference in the world,both in the entertainment industry and health & wellness space. Some of my clients include: NY Times Best Selling Authors, Spiritual teachers, Yogis, Speakers, Change Agents, Celebrities, Global Leaders, & more. I am driven to create beautiful platforms to help my clients expand their reach beyond their wildest dreams.Noel Elie Productions was created due to the high demand for for reasonably priced, professional, creative producers. Let us help you ease your mind by executing your every need effortlessly and in style.'
+          about: '',
+          link: 'meetNoel.html'
         },
         {
           name: '~Meet the Team~',
@@ -154,13 +155,13 @@ $scope.testimonialGallery = [
   	$('.full-size-image').css('display', 'block');
   	$('.gallery-button').addClass('turned-on');
 
-  	if(currentImage === 1){
+  	if(currentImage <= 1){
   		$('#prev-button').css('display', 'none');
   	}else{
   		$('#prev-button').css('display', 'inline-block');
   	}
 
-  	if(currentImage === numberOfImages){
+  	if(currentImage >= numberOfImages){
   		$('#next-button').css('display', 'none');
   	}else{
   		$('#next-button').css('display', 'inline-block');

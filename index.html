@@ -27,7 +27,7 @@
 
 
                  <li class="list-font list-style" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
-                  <span class="bio-container" ng-repeat="skill in list.talent | filter: {about: currentTeam}">
+                  <span ng-repeat="skill in list.talent | filter: {about: currentTeam}">
                         <p>{{skill.about}}</p>
 
 

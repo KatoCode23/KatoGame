@@ -37,7 +37,7 @@ h2{
 }
 
 .testimonial-text-container h2{
-  font-size: 12px;
+  font-size: 18px;
   font-style: italic;
   color: grey;
 }
@@ -62,13 +62,17 @@ h2{
   background-image: url(NoelPuck/logo.png);
 }
 
-.home-page-pic{
+.home-page-pic, .meetNoel-page-pic{
   background-position: center;
   background-size: contain;
   background-image: url(NoelPuck/100);
   background-repeat: no-repeat;
   height: 300px;
   position: relative;
+}
+
+.meetNoel-page-pic{
+  background-image: url(NoelPuck/102);
 }
 
 .menu-container{
@@ -278,18 +282,11 @@ ul{
 	left: 0px;
 }
 
-
-
-.bio-container p{
-  position: relative;
-  text-align: center;
-  font-style: italic;
-}
-
 .bio{
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
+  font-size: 16px;
 }
 
 .testimonial-text-container{
@@ -393,8 +390,9 @@ ul{
 
 @media (min-width: 1400px)
  and (max-width: 1900px) {
-body{
-     /*background-color: yellow;*/
+.testimonial-pic{
+     width: 250px;
+     height: 250px;
     }
 }
 
