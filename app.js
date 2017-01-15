@@ -16,7 +16,8 @@ $scope.categoryList = [
         },
         {
           name: '~Meet the Team~',
-          about: 'Whatever it is we would like to say about our lovely team members'
+          about: '',
+          link: 'meetTeam.html'
         }
       ]
   },
@@ -121,8 +122,15 @@ $scope.testimonialGallery = [
       image: 'NoelPuck/testimonial4.jpg',
       description: 'Working a full time job and growing a coaching practice allowed me ZERO time to plan and execute a charity fundraiser for 250+ people. Hiring Noel was the best possible thing I could have done! Her in­depth knowledge of event planning and execution, ability to negotiate contracts and pricing, target and enlist sponsors, and utilize her extensive network of connections ensured a VERY successful event and a new fundraising record for my charity fund! Whether it be a book launch, a fundraiser, or a client retreat, I will never have another event without Noel’s involvement!'
     }
+];
 
-
+$scope.teamGallery = [
+  {
+    name: 'Kalen Norton',
+    title: 'Web Developer and Fitness Professional',
+    image: 'NoelPuck/11.jpg',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nec erat ac tincidunt. Donec lacinia semper rhoncus. Nam a imperdiet tellus, ac dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis mauris ultricies vestibulum placerat. Pellentesque a ante faucibus ipsum dictum lobortis sit amet non eros. Donec molestie iaculis diam, vel mattis sapien aliquet sodales. Ut sit amet nisi ultrices, lacinia sem sed, sollicitudin mauris. Fusce viverra euismod nisi at malesuada. Nam fermentum.'
+  }
 
 ];
 
