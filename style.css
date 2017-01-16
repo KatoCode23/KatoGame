@@ -26,6 +26,11 @@ a{
   text-decoration: none;
 }
 
+li a{
+  color: black;
+  font-size: 20px;
+}
+
 h2{
   text-decoration: none;
 }
@@ -62,7 +67,7 @@ h2{
   background-image: url(NoelPuck/logo.png);
 }
 
-.home-page-pic, .meetNoel-page-pic{
+.home-page-pic, .meetNoel-page-pic, .contact-pic{
   background-position: center;
   background-size: contain;
   background-image: url(NoelPuck/100);
@@ -73,6 +78,28 @@ h2{
 
 .meetNoel-page-pic{
   background-image: url(NoelPuck/102);
+}
+
+.contact-pic{
+  background-image: url(NoelPuck/103);
+}
+
+.contact-container{
+  text-align: center;
+  position: relative;
+  width: 100%;
+  border: solid red 2px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.contact-list{
+  list-style-type: none;
+  text-align: center;
+}
+
+.fa-hand-o-up{
+  font-size: 30px;
 }
 
 .menu-container{

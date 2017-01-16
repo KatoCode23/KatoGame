@@ -81,7 +81,8 @@ $scope.categoryList = [
    name: 'favorite things'
  },
  {
-   name: 'contact'
+   name: 'contact',
+   link: 'contact.html'
  }
 ];
 
@@ -137,6 +138,10 @@ $scope.teamGallery = [
   $scope.categoryClick = function(menu){
     $scope.currentCategory = menu;
     console.log(menu);
+    if (menu.link) {
+      window.open(menu.link,'_self');
+    }
+
   }
 
   $scope.meetWho = function (skill) {
