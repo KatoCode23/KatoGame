@@ -28,8 +28,17 @@ a{
 
 li a{
   color: black;
-  font-size: 20px;
+  font-size: 15px;
+  padding: 5px;
 }
+
+li a:hover{
+text-decoration: none;
+color: #edc3cc;
+background-color: black;
+border: solid #edc3cc 2px;
+}
+
 
 h2{
   text-decoration: none;
@@ -88,18 +97,17 @@ h2{
   text-align: center;
   position: relative;
   width: 100%;
-  border: solid red 2px;
-  margin: 10px;
-  padding: 5px;
 }
 
 .contact-list{
   list-style-type: none;
   text-align: center;
+  display: inline;
 }
 
 .fa-hand-o-up{
   font-size: 30px;
+  margin: 10px;
 }
 
 .menu-container{
