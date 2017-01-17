@@ -131,6 +131,12 @@ $scope.teamGallery = [
     title: 'Web Developer and Fitness Professional',
     image: 'NoelPuck/11.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nec erat ac tincidunt. Donec lacinia semper rhoncus. Nam a imperdiet tellus, ac dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis mauris ultricies vestibulum placerat. Pellentesque a ante faucibus ipsum dictum lobortis sit amet non eros. Donec molestie iaculis diam, vel mattis sapien aliquet sodales. Ut sit amet nisi ultrices, lacinia sem sed, sollicitudin mauris. Fusce viverra euismod nisi at malesuada. Nam fermentum.'
+  },
+  {
+    name: 'Lisa Barner',
+    title: 'Event/ Retreat Coordinator, Brand Consultant, Freelance Writer, Story Teller, & Counselor',
+    image: 'NoelPuck/12.jpg',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nec erat ac tincidunt. Donec lacinia semper rhoncus. Nam a imperdiet tellus, ac dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis mauris ultricies vestibulum placerat. Pellentesque a ante faucibus ipsum dictum lobortis sit amet non eros. Donec molestie iaculis diam, vel mattis sapien aliquet sodales. Ut sit amet nisi ultrices, lacinia sem sed, sollicitudin mauris. Fusce viverra euismod nisi at malesuada. Nam fermentum.'
   }
 
 ];
