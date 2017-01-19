@@ -334,6 +334,12 @@ ul{
   margin-top: 30px;
 }
 
+#mc_embed_signup{
+  background:#fff;
+ clear:left;
+ font:14px Helvetica,Arial,sans-serif;
+}
+
 @media (min-width: 320px)
  and (max-width: 768px) {
   body{

@@ -15,11 +15,31 @@
                 <div class="border-pic">
                        <a href="index.html"><div class="logo"></div></a>
                 </div>
+                <header>
+                  <span class="categoryStyle"
+                  ng-click="categoryClick(menu)"
+                  ng-repeat="menu in categoryList">{{menu.name}}
+                  </span>
+
+              </header>
+              <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
+                <div class="menu-container">
+
+
+                     <li class="list-font list-style" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+                      <span ng-repeat="skill in list.talent | filter: {about: currentTeam}">
+                            <p>{{skill.about}}</p>
+
+
+                     </span>
+
+               </div>
+             </ul>
 
                  <div class="contact-pic"></div>
                  <div class="contact-container">
                       <ul class="contact-list">
-			                     <li><a href="mailTo:noeleliepuck@gmail.com?Subject=Noel%20Production%20Inquiries!">noeleliepuck@gmail.com</a></li>
+			                     <li><a href="mailTo:noelelieproductions@gmail.com?Subject=Noel%20Production%20Inquiries!">noelelieproductions@gmail.com</a></li>
 			                     <li><i class="fa fa-hand-o-up" aria-hidden="true"></i></li>
 		                  </ul>
                 </div>

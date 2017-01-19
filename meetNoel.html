@@ -15,6 +15,26 @@
                 <div class="border-pic">
                        <a href="index.html"><div class="logo"></div></a>
                 </div>
+                <header>
+                  <span class="categoryStyle"
+                  ng-click="categoryClick(menu)"
+                  ng-repeat="menu in categoryList">{{menu.name}}
+                  </span>
+
+              </header>
+              <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
+                <div class="menu-container">
+
+
+                     <li class="list-font list-style" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+                      <span ng-repeat="skill in list.talent | filter: {about: currentTeam}">
+                            <p>{{skill.about}}</p>
+
+
+                     </span>
+
+               </div>
+             </ul>
 
                  <div class="meetNoel-page-pic"></div>
                      <p class="bio">Im a mover and a shaker who landed in NYC just
