@@ -115,6 +115,13 @@ h2{
   background-size: cover;
   background-color: white;
   padding: 10px;
+  display: block;
+  text-align: left;
+}
+
+.menu-container li{
+  padding: 5px;
+  display: block;
 }
 
 .list-font{
@@ -162,17 +169,6 @@ p{
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-}
-
-ul{
-  color: black;
-  list-style-type: thai;
-}
-
-.list-style{
-  display: inline-flex;
-  padding: 30px;
-
 }
 
 .gallery-button{
@@ -335,9 +331,9 @@ ul{
 }
 
 #mc_embed_signup{
-  background:#fff;
- clear:left;
- font:14px Helvetica,Arial,sans-serif;
+background: #fff;
+clear: left;
+font: 14px Helvetica,Arial,sans-serif;
 }
 
 @media (min-width: 320px)

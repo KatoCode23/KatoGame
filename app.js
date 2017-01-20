@@ -3,20 +3,18 @@ var app = angular.module('app', []);
 app.controller('myController', function($scope){
 $scope.currentCategory = {name: "none"};
 $scope.currentTeam = {name: "none"};
-var numberOfImages= 32;
+var numberOfImages= 31;
 var currentImage= null;
 $scope.categoryList = [
   {
     name: 'about',
       talent: [
         {
-          name: '~Meet Noel~',
-          about: '',
+          name: 'Meet Noel',
           link: 'meetNoel.html'
         },
         {
-          name: '~Meet the Team~',
-          about: '',
+          name: 'Meet the Team',
           link: 'meetTeam.html'
         }
       ]
@@ -24,28 +22,28 @@ $scope.categoryList = [
   {
    name: 'skills',
     talent: [
-       {name: '~International Event Coordination~'},
-       {name: '~Social Media Srategy~'},
-       {name: '~Branding Development~'},
-       {name: '~Wedding Planner~'},
-       {name: '~Brand Colaberation~'},
-       {name: '~Fundraiser~'},
-       {name: '~Cooperate Events Dinner Parties Fashion Shows Premiers~'},
-       {name: '~Creative Consulting~'},
-       {name: '~Publicity~'},
-       {name: '~Photo and Gallery Production~'},
-       {name: '~Book and Speaking Agent~'},
-       {name: '~Sponsorship~'},
+       {name: 'International Event Coordination'},
+       {name: 'Social Media Srategy'},
+       {name: 'Branding Development'},
+       {name: 'Wedding Planner'},
+       {name: 'Brand Colaberation'},
+       {name: 'Fundraiser'},
+       {name: 'Cooperate Events Dinner Parties Fashion Shows Premiers'},
+       {name: 'Creative Consulting'},
+       {name: 'Publicity'},
+       {name: 'Photo and Gallery Production'},
+       {name: 'Book and Speaking Agent'},
+       {name: 'Sponsorship'},
      ]
  },
  {
    name: 'events',
     talent: [
         {
-          name: '~Upcoming Events~'
+          name: 'Upcoming Events'
         },
         {
-          name: '~Event Services~',
+          name: 'Event Services',
           about: 'Audio/Visual, Budget Planning, Catering Consultation, Decor Selection, Entertaiment, Floral, Guest Gifts, Hotel Room Blocks, Itineraries, Invitations, Lighting and Sound, Onsite Management, Photography, Program, Rentals,Transportation, Venue Selection & Management, Videography'
         }
       ]
@@ -55,24 +53,18 @@ $scope.categoryList = [
    name: 'gratitude',
     talent: [
       {
-        name: '~testimonials~',
-        about: '',
+        name: 'testimonials',
         link: 'gratitude.html'
       },
       {
-        name: '~clientele~',
+        name: 'clientele',
         about:'Current & previous clientele:, NY Times Best Selling Author, Kimberly Snyder, NY Times Best Selling Author, Deepak Chopra, Celebrity Raw Chef & Author, Kristina "Fully Raw", NY Times Best Selling Author, Gabrielle Bernstein IMGs Mercedes Benz Fashion Week, The Daily Loves Mastin Kipp, NY Times Best Selling Author, Crazy Sexy Cancers Kris Carr, Meggan Watterson, Sheila Kelley’s S Factor Fitness, IntenSatis Patricia Moreno, Terri Cole Women’s Health Magazine, Mama Glow’s Latham Thomas, Committed Impulse Founder, Josh Pais, Joel Readence, Balloon Management, Vikaz, Soul Ku, GFI Group, Business Meets Spirituality, Alex Jamieson, Gry Sinding, REVEAL Conference (2013 & 2014), NYPS, The William Fund, Soul Empowered Retreats around the world, As seen on Shark Tank, PiperWai All Natural Deodorant, Peace Love and Cancer, Fearless Inventory, Leesa, Sapira'
       }
     ]
  },
  {
    name: 'gallery',
-    talent: [
-      {
-        name: '~gallery~',
-        link: 'gallery.html'
-      }
-    ]
+   link: 'gallery.html'
  },
  {
    name: 'words of wisdom'
@@ -146,6 +138,9 @@ $scope.teamGallery = [
     console.log(menu);
     if (menu.link) {
       window.open(menu.link,'_self');
+    }
+    if($('.menu-container').css('display', 'block')){
+      $('.menu-container').css('display', 'none');
     }
 
   }
