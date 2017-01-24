@@ -1,5 +1,5 @@
 body{
-  background: yellow;
+  background: black;
   text-align: center;
   color: white;
   font-family: Arial;
@@ -8,10 +8,10 @@ body{
 
 .bar{
   width: 100%;
+  margin: 0 auto;
   text-align: center;
   font-size: 45px;
   font-style: italic;
-  padding: 10px;
   background-repeat: no-repeat;;
   background-position: center;
   background-size: cover;
