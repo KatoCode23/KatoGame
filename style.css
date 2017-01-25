@@ -75,3 +75,10 @@ footer{
   right: 0;
   padding: 10px;
 }
+
+.fa-facebook, .fa-instagram{
+  font-size: 45px;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
