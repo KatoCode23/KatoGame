@@ -6,7 +6,7 @@ body{
   cursor: pointer;
 }
 
-.bar{
+.bar, footer{
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -19,9 +19,7 @@ body{
 }
 
 .picture-container{
-  border: solid white 5px;
   padding: 5px;
-  margin: 5px;
   background-color: black;
   margin 0 auto;
   text-align: center;
@@ -29,9 +27,51 @@ body{
 }
 
 .picture{
-  background-size: contain;
+  background-size: contain;;
   background-repeat: no-repeat;
   width: 50%;
   padding: 10px;
   margin: 0 auto;
+  top: 0;
+  position: absolute;
+  left: 25%;
+  border: solid black 5px;
+  max-height: 500px;
+}
+
+.background-image-slideshow{
+  list-style-type: none;
+}
+
+.background-image-slideshow li span{
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 24s linear infinite 0s;
+}
+
+.background-image-slideshow li:nth-child(1) span{
+}
+
+.background-image-slideshow li:nth-child(2) span{
+  animation-delay: 8s;
+}
+
+
+.background-image-slideshow li:nth-child(3) span{
+  animation-delay: 16s;
+}
+
+@keyframes imageAnimation {
+    0% {opacity: 0; animation-timing-function: ease in;}
+    16% {opacity: 1; animation-timing-function: ease out;}
+    33% {opacity: 0; }
+
+}
+
+footer{
+  position: absolute;
+  height: 10%;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
 }
