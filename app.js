@@ -78,6 +78,8 @@ $scope.categoryList = [
  }
 ];
 
+console.log($scope.categoryList[-1]);
+
 $scope.testimonialGallery = [
     {
       name: 'Kris Carr',
@@ -133,17 +135,16 @@ $scope.teamGallery = [
 
 ];
 
+
+
   $scope.categoryClick = function(menu){
     $scope.currentCategory = menu;
     console.log(menu);
-    if (menu.link) {
-      window.open(menu.link,'_self');
-    }
-    if($('.menu-container').css('display', 'block')){
-      $('.menu-container').css('display', 'none');
-    }
-
-  }
+   if (menu.link)
+   {
+     window.open(menu.link,'_self');
+   }
+}
 
   $scope.meetWho = function (skill) {
     if (skill.about) {

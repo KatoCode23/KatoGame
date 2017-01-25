@@ -111,13 +111,15 @@ h2{
 }
 
 .menu-container{
+  display: block;
   position: relative;
   background-size: cover;
   background-color: white;
   padding: 10px;
-  display: block;
   text-align: left;
 }
+
+
 
 .menu-container li{
   padding: 5px;
