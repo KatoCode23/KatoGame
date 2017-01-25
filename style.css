@@ -17,3 +17,21 @@ body{
   background-size: cover;
   background-image: url(EricPringle/header.jpg);
 }
+
+.picture-container{
+  border: solid white 5px;
+  padding: 5px;
+  margin: 5px;
+  background-color: black;
+  margin 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.picture{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  padding: 10px;
+  margin: 0 auto;
+}
