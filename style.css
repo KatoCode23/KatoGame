@@ -18,6 +18,10 @@ body{
   background-image: url(EricPringle/header.jpg);
 }
 
+a{
+  text-decoration: none;
+}
+
 .picture-container{
   padding: 5px;
   background-color: black;
@@ -74,6 +78,8 @@ footer{
   bottom: 0;
   right: 0;
   padding: 10px;
+  text-align: center;
+  line-height: 50%;
 }
 
 .fa-facebook, .fa-instagram{
@@ -81,4 +87,17 @@ footer{
   color: white;
   text-decoration: none;
   padding: 5px;
+  margin: 5px;
+}
+
+.fa-facebook:hover, .fa-instagram:hover{
+  color: black;
+}
+
+.email a{
+  color: white;
+}
+
+.email a:hover{
+  color: black;
 }
