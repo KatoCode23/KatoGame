@@ -25,10 +25,9 @@
             <div class="menu-container">
 
 
-                 <li ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+                 <li id="list-styling" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
                   <span ng-repeat="skill in list.talent | filter: {about: currentTeam}">
                         <p>{{skill.about}}</p>
-
 
                  </span>
 

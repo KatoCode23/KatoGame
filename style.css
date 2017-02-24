@@ -20,7 +20,9 @@ header{
   padding: 50px;
 }
 
-
+.meet-font{
+  font-family: 'Ostrich Sans Light', arial;
+}
 
 a{
   text-decoration: none;
@@ -93,6 +95,8 @@ h2{
   background-image: url(NoelPuck/103);
 }
 
+
+
 .contact-container{
   text-align: center;
   position: relative;
@@ -119,8 +123,6 @@ h2{
   text-align: left;
 }
 
-
-
 .menu-container li{
   padding: 5px;
   display: block;
@@ -129,6 +131,10 @@ h2{
 .list-font{
   color: black;
   font-style: italic;
+}
+
+#list-styling{
+  font-size: 16px;
 }
 
 .categoryStyle{
@@ -205,7 +211,7 @@ p{
 	color: #black;
 }
 
-.gallery-button.turned-on{
+.gallery-button .turned-on{
 	display: inline-block;
 }
 
@@ -303,7 +309,7 @@ p{
   margin: 10px;
   padding: 5px;
   float: right;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 

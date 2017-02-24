@@ -3,8 +3,14 @@ var app = angular.module('app', []);
 app.controller('myController', function($scope){
 $scope.currentCategory = {name: "none"};
 $scope.currentTeam = {name: "none"};
-var numberOfImages= 31;
+var numberOfImages= 45;
 var currentImage= null;
+//$scope.imageIndexArr = [];
+//for (i = 1; i <= 31; i++) {
+  //$scope.imageIndexArr.push(i);
+//}
+//window.$scope = $scope;
+
 $scope.categoryList = [
   {
     name: 'about',
@@ -123,14 +129,20 @@ $scope.teamGallery = [
   {
     name: 'Kalen Norton',
     title: 'Web Developer and Fitness Professional',
-    image: 'NoelPuck/11.jpg',
+    image: 'NoelPuck/100.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nec erat ac tincidunt. Donec lacinia semper rhoncus. Nam a imperdiet tellus, ac dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis mauris ultricies vestibulum placerat. Pellentesque a ante faucibus ipsum dictum lobortis sit amet non eros. Donec molestie iaculis diam, vel mattis sapien aliquet sodales. Ut sit amet nisi ultrices, lacinia sem sed, sollicitudin mauris. Fusce viverra euismod nisi at malesuada. Nam fermentum.'
   },
   {
     name: 'Lisa Barner',
     title: 'Event/ Retreat Coordinator, Brand Consultant, Freelance Writer, Story Teller, & Counselor',
-    image: 'NoelPuck/12.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nec erat ac tincidunt. Donec lacinia semper rhoncus. Nam a imperdiet tellus, ac dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis mauris ultricies vestibulum placerat. Pellentesque a ante faucibus ipsum dictum lobortis sit amet non eros. Donec molestie iaculis diam, vel mattis sapien aliquet sodales. Ut sit amet nisi ultrices, lacinia sem sed, sollicitudin mauris. Fusce viverra euismod nisi at malesuada. Nam fermentum.'
+    image: 'NoelPuck/101.jpg',
+    description: 'Lisa is a true Jill of All Trades and has been a monumental part of Noel Elie Productions team. She also is an author, has an MS in Counseling, Bereavement group facilitator, Holistic Counselor and Healer. Lisa works with clients as they explore their true essence through practices of self-love, mindfulness and meditation. She has inspired many through her soulful words and writings where her compassion and nurturance can be felt. Her greatest passion is helping others recognize their greatest potential and fullest existence. '
+  },
+  {
+    name: 'Christina Schrieder',
+    title: ' Events Manager',
+    image: 'NoelPuck/102.jpg',
+    description: 'Christina has been assisting Noel Elie Productions for 4+ years. Whether she is planning weddings, coordinating events, overseeing customer relations, or brand management --theres not much this friendly face cant do!She previously managed events for several years at NYIT in NYC.'
   }
 
 ];
@@ -143,6 +155,11 @@ $scope.teamGallery = [
    if (menu.link)
    {
      window.open(menu.link,'_self');
+   }
+   if(menu.talent && menu.name === 'skills')
+   {
+      console.log("Hey I've been looking for you");
+
    }
 }
 
