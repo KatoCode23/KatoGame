@@ -95,6 +95,17 @@ h2{
   background-image: url(NoelPuck/103);
 }
 
+.arrow-container{
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-image: url(NoelPuck/arrow.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
 .contact-container{
   text-align: center;
   position: relative;
@@ -107,9 +118,32 @@ h2{
   display: inline;
 }
 
-.fa-hand-o-up{
-  font-size: 30px;
-  margin: 10px;
+.press-pic-container{
+  height: 400px;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.press-pic-container .presspic{
+  height: 80%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.press-footer{
+  background-color: #edc3cc;
+  width: 100%;
+  height: 20%;
+  color: black;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  position: relative;
+  background-image: url(NoelPuck/background.jpg);
+  background-size: cover;
 }
 
 .menu-container{

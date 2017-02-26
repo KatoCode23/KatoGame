@@ -77,7 +77,8 @@ $scope.categoryList = [
    name: 'words of wisdom'
  },
  {
-   name: 'favorite things'
+   name: 'favorite things',
+   link: 'favorite.html'
  },
  {
    name: 'contact',
@@ -146,7 +147,20 @@ $scope.teamGallery = [
 
 ];
 
-
+$scope.press = [
+  {
+    name: 'BioMat',
+    link: 'http://noel.biomatnetwork.com/default/',
+    image: 'NoelPuck/400.jpg',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nec erat ac tincidunt. Donec lacinia semper rhoncus. Nam a imperdiet tellus, ac dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis mauris ultricies vestibulum placerat. Pellentesque a ante faucibus ipsum dictum lobortis sit amet non eros. Donec molestie iaculis diam, vel mattis sapien aliquet sodales. Ut sit amet nisi ultrices, lacinia sem sed, sollicitudin mauris. Fusce viverra euismod nisi at malesuada. Nam fermentum.'
+  },
+  {
+    name: 'Vegan Digestive Cleanse',
+    link: 'http://www.sarasotaintegrativehealth.com/shop/cleanses/vegan-digestive-cleanse/',
+    image: 'NoelPuck/401.jpg',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nec erat ac tincidunt. Donec lacinia semper rhoncus. Nam a imperdiet tellus, ac dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis mauris ultricies vestibulum placerat. Pellentesque a ante faucibus ipsum dictum lobortis sit amet non eros. Donec molestie iaculis diam, vel mattis sapien aliquet sodales. Ut sit amet nisi ultrices, lacinia sem sed, sollicitudin mauris. Fusce viverra euismod nisi at malesuada. Nam fermentum.'
+  }
+];
 
   $scope.categoryClick = function(menu){
     $scope.currentCategory = menu;
@@ -225,9 +239,6 @@ $('#prev-button').click(function(){
 	currentImage = parseInt(currentImage) - 1;
 	openImage(currentImage);
 })
-
-
-
 
 
 });
