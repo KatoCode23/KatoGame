@@ -2,7 +2,7 @@
 <html>
   <head>
     <link href="http://allfont.net/allfont.css?fonts=ostrich-sans-light" rel="stylesheet" type="text/css" />
-    <title>Noelle Team</title>
+    <title>Noel Team</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script src="https://use.fontawesome.com/f6bd501eb7.js"></script>
@@ -10,47 +10,33 @@
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
-  <body class="background-image" ng-app="app" ng-controller="myController">
+ <body class="background-image" ng-app="app" ng-controller="myController">
     <div class="main-content meet-font">
-
-      <div class="border-pic">
-      <a href="index.html"><div class="logo"></div></a>
-      </div>
+          <div class="border-pic">
+              <a href="index.html"><div class="logo"></div></a>
+          </div>
         <header>
-          <span class="categoryStyle"
-          ng-click="categoryClick(menu)"
-          ng-repeat="menu in categoryList">{{menu.name}}
-          </span>
-
-      </header>
-      <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
-        <div class="menu-container">
-
-
-             <li class="list-font list-style" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
-              <span ng-repeat="skill in list.talent | filter: {about: currentTeam}">
-                    <p>{{skill.about}}</p>
-
-
-             </span>
-
-       </div>
-     </ul>
-                <div class="testimonial-text-container" ng-repeat="name in teamGallery">
-
-                    <h1>{{name.name}}</h1>
-                         <h2>{{name.title}}</h2>
-                                <div class="testimonial-pic-container">
-                                      <span><img class="testimonial-pic" ng-src="{{name.image}}"></span>
-                                      <p class="testimonial-paragragh">{{name.description}}</p>
-                               </div>
-
-
-                </div>
-
-
-
+                <span class="categoryStyle"
+                ng-click="categoryClick(menu)"
+                ng-repeat="menu in categoryList">{{menu.name}}
+                </span>
+        </header>
+               <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
+                   <div class="menu-container">
+                       <li ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+                           <span ng-repeat="skill in list.talent | filter: {about: currentTeam}">
+                               <p>{{skill.about}}</p>
+                          </span>
+                  </div>
+               </ul>
+                          <div class="testimonial-text-container" ng-repeat="name in teamGallery">
+                              <h1>{{name.name}}</h1>
+                                   <h2>{{name.title}}</h2>
+                                        <div class="testimonial-pic-container">
+                                             <span><img class="testimonial-pic" ng-src="{{name.image}}"></span>
+                                                 <p class="testimonial-paragragh">{{name.description}}</p>
+                                        </div>
+                          </div>
   </div>
       <footer>
              <a href="http://facebook.com/noelelieproductions" target="_blank" class="fa fa-facebook"></a>

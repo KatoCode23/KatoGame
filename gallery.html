@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="http://allfont.net/allfont.css?fonts=ostrich-sans-light" rel="stylesheet" type="text/css" />
     <title>Gallery</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <body ng-app="app" ng-controller="myController">
-    <div class="main-content">
+    <div class="main-content meet-font">
           <div class="border-pic">
           <a href="index.html"><div class="logo"></div></a>
           </div>
@@ -22,7 +23,7 @@
           </header>
     <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
             <div class="menu-container">
-              <li class="list-font list-style" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+              <li ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
                   <span class="bio-container" ng-repeat="skill in list.talent | filter: {about: currentTeam}">
                         <p>{{skill.about}}</p>
                   </span>

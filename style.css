@@ -2,7 +2,6 @@ body{
   background-color: white;
   text-align: center;
   color: grey;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -30,7 +29,7 @@ a{
 
 li a{
   color: black;
-  font-size: 15px;
+  font-size: 25px;
   padding: 5px;
 }
 
@@ -65,6 +64,7 @@ h2{
   background-image: url(NoelPuck/background.jpg);
   text-align: -webkit-center;
   height: 320px;
+  margin: 0 auto;
 }
 
 .logo{
@@ -95,8 +95,6 @@ h2{
   background-image: url(NoelPuck/103);
 }
 
-
-
 .contact-container{
   text-align: center;
   position: relative;
@@ -117,35 +115,29 @@ h2{
 .menu-container{
   display: block;
   position: relative;
-  background-size: cover;
   background-color: white;
   padding: 10px;
-  text-align: left;
+  margin: 0 auto;
 }
 
 .menu-container li{
   padding: 5px;
   display: block;
+  font-size: 20px;
 }
 
-.list-font{
-  color: black;
-  font-style: italic;
-}
-
-#list-styling{
-  font-size: 16px;
+.hide-list{
+  display: none;
 }
 
 .categoryStyle{
-  font-size: 12px;
+  font-size: 24px;
   padding: 9px;
   color: grey;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .categoryStyle:hover{
-  background-image: url(NoelPuck/7.jpg);
+  background-image: url();
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -171,8 +163,6 @@ footer{
   color: white;
 }
 
-
-
 p{
   max-width: 400px;
   margin: 0 auto;
@@ -195,7 +185,7 @@ p{
 	margin: 0px;
 	display: none;
 	padding: 7px 16px;
-	font-size: 30px !important;
+	font-size: 30px;
 
 	-webkit-transition: background-color .5s, color .5s;
 	-o-transition: background-color 	 .5s, color .5s;
@@ -263,7 +253,7 @@ p{
 	/*-webkit-filter: grayscale(100%);*/
 }
 
-.picture-container{
+.picture-container, .logo-container{
 	display: flex;
 	display: -webkit-flex;
 	flex-wrap: wrap;
@@ -279,6 +269,19 @@ p{
 .picture-container .gallerypic:hover{
 	transform: scale(1.05);
 	-webkit-filter: grayscale(0%);
+}
+
+.logo-container .logopic{
+	width: 250px;
+	height: 250px;
+	background-size: contain;
+	background-position: center;
+	line-height: 100px;
+	position: relative;
+	overflow: hidden;
+	padding: 10px;
+	margin: 5px;
+	background-repeat: no-repeat;
 }
 
 .testimonial-pic-container{
@@ -303,13 +306,18 @@ p{
 
 .testimonial-paragragh{
   color: black;
-  font-style: italic;
   position: relative;
   top: 0;
   margin: 10px;
   padding: 5px;
   float: right;
   font-size: 25px;
+}
+
+.event-service-paragraph{
+  font-size: 25px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 
@@ -326,7 +334,7 @@ p{
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .testimonial-text-container{
@@ -338,114 +346,6 @@ p{
   margin-top: 30px;
 }
 
-#mc_embed_signup{
-background: #fff;
-clear: left;
-font: 14px Helvetica,Arial,sans-serif;
-}
-
-@media (min-width: 320px)
+@media (min-width: 0px)
  and (max-width: 768px) {
-  body{
-     /*background-color: red;*/
-     }
-.logo{
-  top: 60px;
-  width: 219px;
-  height: 90px;
-  background-size: contain;
-  background-repeat: no-repeat;
-     }
-.categoryStyle{
-    display: block;
-    font-size: 10px;
-    padding: 5px;
-     }
-.border-pic{
-    height: 150px;
-    width: 225px;
-     }
-.home-page-pic{
-    height: 125px;
-    width: 200px;
-    }
-.menu-container{
-    left: -15px;
-    }
-
-}
-
-@media (min-width: 331px)
- and (max-width: 351px) {
-
-.border-pic{
-    width: 270px;
-     }
-}
-
-@media (min-width: 352px)
- and (max-width: 375px) {
-
-.border-pic{
-    width: 275px;
-     }
-}
-
-@media (min-width: 362px)
- and (max-width: 375px) {
-
-.border-pic{
-    width: 300px;
-     }
-}
-
-@media (min-width: 376px)
- and (max-width: 400px) {
-
-.border-pic{
-    width: 315px;
-     }
-}
-
-@media (min-width: 401px)
- and (max-width: 425px) {
-  body{
-     /*background-color: purple;*/
-     }
-.border-pic{
-    width: 325px;
-     }
-}
-
-@media (min-width: 426px)
- and (max-width: 768px) {
-  body{
-     /*background-color: white;*/
-     }
-  .border-pic{
-    width: 100%;
-    height: 200px;
-    position: relative;
-    left: 0;
-     }
-.home-page-pic{
-    width: 300px;
-    height: 178px;
-}
-}
-
-@media (min-width: 1400px)
- and (max-width: 1900px) {
-.testimonial-pic{
-     width: 250px;
-     height: 250px;
-    }
-}
-
- @media (min-width: 1900px)
-  and (max-width: 2900px) {
-body{
-      /*background-color: green;*/
-      }
-
 }
