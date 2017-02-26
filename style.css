@@ -122,7 +122,7 @@ h2{
   height: 400px;
   width: 400px;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: center;
 }
 
@@ -131,6 +131,7 @@ h2{
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .press-footer{
@@ -144,6 +145,7 @@ h2{
   position: relative;
   background-image: url(NoelPuck/background.jpg);
   background-size: cover;
+  display: inline-block;
 }
 
 .menu-container{

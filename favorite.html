@@ -31,7 +31,10 @@
              </ul>
              <div class="press-pic-container" ng-repeat="photo in press">
                          <span><img class="presspic" ng-src="{{photo.image}}"></span>
-                         <footer class="press-footer"><h1>{{photo.name}}</h1></footer>
+                         <footer class="press-footer">
+                              <h1>{{photo.name}}</h1>
+                              <h2><a ng-href="{{photo.link}}">Click Me</a></h2>
+                         </footer>
              </div>
   </div>
        <footer>
