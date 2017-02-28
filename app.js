@@ -5,7 +5,6 @@ $scope.currentCategory = {name: "none"};
 $scope.currentTeam = {name: "none"};
 var numberOfImages= 45;
 var currentImage= null;
-
 var indexOfLogoImages = 228;
 //$scope.imageIndexArr = [];
 //for (i = 1; i <= 31; i++) {
@@ -72,9 +71,6 @@ $scope.categoryList = [
  {
    name: 'gallery',
    link: 'gallery.html'
- },
- {
-   name: 'words of wisdom'
  },
  {
    name: 'favorite things',
@@ -149,7 +145,7 @@ $scope.teamGallery = [
 
 $scope.press = [
   {
-    name: 'BioMat',
+    name: 'Bio-Mat',
     link: 'http://noel.biomatnetwork.com/default/',
     image: 'NoelPuck/400.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nec erat ac tincidunt. Donec lacinia semper rhoncus. Nam a imperdiet tellus, ac dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis mauris ultricies vestibulum placerat. Pellentesque a ante faucibus ipsum dictum lobortis sit amet non eros. Donec molestie iaculis diam, vel mattis sapien aliquet sodales. Ut sit amet nisi ultrices, lacinia sem sed, sollicitudin mauris. Fusce viverra euismod nisi at malesuada. Nam fermentum.'
@@ -169,7 +165,15 @@ $scope.press = [
    {
      window.open(menu.link,'_self');
    }
-}
+   else if($(".menu-container").css('display', 'block'))
+   {
+      $(".menu-container").css('display', 'none');
+   }
+   else
+   {
+     $scope.categoryClick($scope.currentCategory);
+   }
+ }
 
   $scope.meetWho = function (skill) {
     if (skill.about) {
