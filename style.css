@@ -17,6 +17,7 @@ header{
 
 .main-content{
   padding: 50px;
+  cursor: pointer;
 }
 
 .meet-font{
@@ -183,17 +184,13 @@ h2{
   font-size: 20px;
 }
 
-.hide-list{
-  display: none;
-}
-
 .categoryStyle{
   font-size: 24px;
   padding: 9px;
   color: black;
 }
 
-.categoryStyle:hover{
+.categoryStyle:hover, .menu-container li:hover{
   background-image: url(NoelPuck/triangle.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -371,12 +368,6 @@ p{
   font-size: 25px;
 }
 
-.event-service-paragraph{
-  font-size: 25px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
 
 
 #next-button{
@@ -403,6 +394,22 @@ p{
   margin-top: 30px;
 }
 
+.event-list-container{
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+.event-list-container ul{
+  list-style-type: none;
+}
+
+.event-list-style{
+  font-size: 40px;
+}
+
 @media (min-width: 0px)
  and (max-width: 768px) {
 
@@ -412,13 +419,21 @@ p{
 }
 
 .categoryStyle{
-  display: block;
+  display: inline-flex;
 }
 .press-header h1{
-  font-size: 30px;
+  font-size: 25px;
 }
-
 .press-header h2 a{
   font-size: 23px;
+}
+.menu-container{
+  left: -21px;
+}
+.event-list-style{
+  font-size: 30px;
+}
+.event-list-container{
+  left: -21px;
 }
 }

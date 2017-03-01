@@ -51,7 +51,7 @@ $scope.categoryList = [
         },
         {
           name: 'Event Services',
-          about: 'Audio/Visual, Budget Planning, Catering Consultation, Decor Selection, Entertaiment, Floral, Guest Gifts, Hotel Room Blocks, Itineraries, Invitations, Lighting and Sound, Onsite Management, Photography, Program, Rentals, Transportation, Venue Selection & Management, Videography'
+          link: 'services.html'
         }
       ]
  },
@@ -126,7 +126,7 @@ $scope.teamGallery = [
     name: 'Kalen Norton',
     title: 'Web Developer and Fitness Professional',
     image: 'NoelPuck/100.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nec erat ac tincidunt. Donec lacinia semper rhoncus. Nam a imperdiet tellus, ac dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis mauris ultricies vestibulum placerat. Pellentesque a ante faucibus ipsum dictum lobortis sit amet non eros. Donec molestie iaculis diam, vel mattis sapien aliquet sodales. Ut sit amet nisi ultrices, lacinia sem sed, sollicitudin mauris. Fusce viverra euismod nisi at malesuada. Nam fermentum.'
+    description: 'Kalen, a web developer and fitness professional, will hand you a lifestyle you can be proud of forever. Kalen made fitness a career when he realized how much he enjoyed seeing peoples lives change in a positive way just from being fit. Through boosts in confidence, energy levels, lifestyle choices, etc..., oh and he writes code too!'
   },
   {
     name: 'Lisa Barner',
@@ -158,6 +158,26 @@ $scope.press = [
   }
 ];
 
+$scope.skillsList = [
+  {name: 'Audio/Visual'},
+  {name: 'Budget Planning'},
+  {name: 'Catering Consultation'},
+  {name: 'Decor Selection'},
+  {name: 'Entertaiment'},
+  {name: 'Floral'},
+  {name: 'Guest Gifts'},
+  {name: 'Hotel Room Blocks'},
+  {name: 'Itineraries'},
+  {name: 'Invitations'},
+  {name: 'Lighting and Sound'},
+  {name: 'Onsite Management'},
+  {name: 'Photography'},
+  {name: 'Program, Rentals'},
+  {name: 'Transportation'},
+  {name: 'Venue Selection & Management'},
+  {name: 'Videography'}
+];
+
   $scope.categoryClick = function(menu){
     $scope.currentCategory = menu;
     console.log(menu);
@@ -165,20 +185,16 @@ $scope.press = [
    {
      window.open(menu.link,'_self');
    }
-   else if($(".menu-container").css('display', 'block'))
+   if($(".menu-container").css('display', 'block'))
    {
       $(".menu-container").css('display', 'none');
    }
-   else
-   {
-     $scope.categoryClick($scope.currentCategory);
+   if(menu.name === 'skills'){
+     console.log("You just clicked skill");
    }
  }
 
   $scope.meetWho = function (skill) {
-    if (skill.about) {
-      $scope.currentTeam = skill.about;
-    }
     if (skill.link) {
       window.open(skill.link,'_self');
     }

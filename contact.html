@@ -24,9 +24,7 @@
               <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
                 <div class="menu-container">
                      <li ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
-                      <span ng-repeat="skill in list.talent | filter: {about: currentTeam}">
-                            <p>{{skill.about}}</p>
-                      </span>
+                      <span ng-repeat="skill in list.talent"></span>
                 </div>
              </ul>
                  <div class="contact-pic"></div>

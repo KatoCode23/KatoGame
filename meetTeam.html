@@ -24,19 +24,17 @@
                <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
                    <div class="menu-container">
                        <li ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
-                           <span ng-repeat="skill in list.talent | filter: {about: currentTeam}">
-                               <p>{{skill.about}}</p>
-                          </span>
+                           <span ng-repeat="skill in list.talent"></span>
                   </div>
                </ul>
-                          <div class="testimonial-text-container" ng-repeat="name in teamGallery">
-                              <h1>{{name.name}}</h1>
-                                   <h2>{{name.title}}</h2>
-                                        <div class="testimonial-pic-container">
-                                             <span><img class="testimonial-pic" ng-src="{{name.image}}"></span>
-                                                 <p class="testimonial-paragragh">{{name.description}}</p>
-                                        </div>
-                          </div>
+                    <div class="testimonial-text-container" ng-repeat="name in teamGallery">
+                      <h1>{{name.name}}</h1>
+                          <h2>{{name.title}}</h2>
+                              <div class="testimonial-pic-container">
+                                 <span><img class="testimonial-pic" ng-src="{{name.image}}"></span>
+                                 <p class="testimonial-paragragh">{{name.description}}</p>
+                             </div>
+                    </div>
   </div>
       <footer>
              <a href="http://facebook.com/noelelieproductions" target="_blank" class="fa fa-facebook"></a>

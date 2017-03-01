@@ -9,34 +9,24 @@
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
-  <body ng-app="app" ng-controller="myController">
+<body ng-app="app" ng-controller="myController">
           <div class="main-content meet-font">
                 <div class="border-pic">
                        <a href="index.html"><div class="logo"></div></a>
                 </div>
-              <header>
-                  <span class="categoryStyle"
-                  ng-click="categoryClick(menu)"
-                  ng-repeat="menu in categoryList">{{menu.name}}
-                  </span>
-
-              </header>
+                      <header>
+                          <span class="categoryStyle"
+                          ng-click="categoryClick(menu)"
+                          ng-repeat="menu in categoryList">{{menu.name}}
+                          </span>
+                      </header>
               <ul ng-repeat="list in categoryList | filter: {name: currentCategory.name}">
                 <div class="menu-container">
-
-
-                     <li class="list-font list-style" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
-                      <span ng-repeat="skill in list.talent | filter: {about: currentTeam}">
-                            <p>{{skill.about}}</p>
-
-
-                     </span>
-
+                    <li class="list-font list-style" ng-click="meetWho(skill)" ng-repeat="skill in list.talent">{{skill.name}}</li>
+                      <span ng-repeat="skill in list.talent"></span>
                </div>
              </ul>
-
-                 <div class="meetNoel-page-pic"></div>
+                   <div class="meetNoel-page-pic"></div>
                      <p class="bio">Im a mover and a shaker who landed in NYC just
                      3 days after graduating  to pursue my dreams in the entertainment
                      industry. Ive been a professional NYC based Actress for several
@@ -51,20 +41,14 @@
                      professional, creative producers. Let us help you ease your
                      mind by executing your every need effortlessly and in style.
                     </p>
-
-  </div>
-
-
+                  </div>
     <footer>
        <a href="http://facebook.com/noelelieproductions" target="_blank" class="fa fa-facebook"></a>
        <a href="http://instagram.com/noel_elie" target="_blank" class="fa fa-instagram"></a>
        <a href="http://twitter.com/noel_elie" target="_blank" class="fa fa-twitter"></a>
        <a href="http://pinterest.com/noelelie" target="_blank" class="fa fa-pinterest"></a>
        <a href="http://www.imdb.me/noelelie" target="_blank" class="fa fa-imdb"></a>
-
-
    </footer>
-
 </body>
 
   <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
