@@ -28,22 +28,9 @@ $scope.categoryList = [
   },
   {
    name: 'skills',
-    talent: [
-       {name: 'International Event Coordination'},
-       {name: 'Social Media Srategy'},
-       {name: 'Branding Development'},
-       {name: 'Wedding Planner'},
-       {name: 'Brand Colaberation'},
-       {name: 'Fundraiser'},
-       {name: 'Cooperate Events Dinner Parties Fashion Shows Premiers'},
-       {name: 'Creative Consulting'},
-       {name: 'Publicity'},
-       {name: 'Photo and Gallery Production'},
-       {name: 'Book and Speaking Agent'},
-       {name: 'Sponsorship'},
-     ]
- },
- {
+   link: 'skills.html'
+  },
+  {
    name: 'events',
     talent: [
         {
@@ -123,12 +110,6 @@ $scope.testimonialGallery = [
 
 $scope.teamGallery = [
   {
-    name: 'Kalen Norton',
-    title: 'Web Developer and Fitness Professional',
-    image: 'NoelPuck/100.jpg',
-    description: 'Kalen, a web developer and fitness professional, will hand you a lifestyle you can be proud of forever. Kalen made fitness a career when he realized how much he enjoyed seeing peoples lives change in a positive way just from being fit. Through boosts in confidence, energy levels, lifestyle choices, etc..., oh and he writes code too!'
-  },
-  {
     name: 'Lisa Barner',
     title: 'Event/ Retreat Coordinator, Brand Consultant, Freelance Writer, Story Teller, & Counselor',
     image: 'NoelPuck/101.jpg',
@@ -139,8 +120,13 @@ $scope.teamGallery = [
     title: ' Events Manager',
     image: 'NoelPuck/102.jpg',
     description: 'Christina has been assisting Noel Elie Productions for 4+ years. Whether she is planning weddings, coordinating events, overseeing customer relations, or brand management --theres not much this friendly face cant do!She previously managed events for several years at NYIT in NYC.'
+  },
+  {
+    name: 'Kalen Norton',
+    title: 'Web Developer and Fitness Professional',
+    image: 'NoelPuck/100.jpg',
+    description: 'Kalen, a web developer and fitness professional, will hand you a lifestyle you can be proud of forever. Kalen made fitness a career when he realized how much he enjoyed seeing peoples lives change in a positive way just from being fit. Through boosts in confidence, energy levels, lifestyle choices, etc..., oh and he writes code too!'
   }
-
 ];
 
 $scope.press = [
@@ -156,6 +142,21 @@ $scope.press = [
     image: 'NoelPuck/401.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nec erat ac tincidunt. Donec lacinia semper rhoncus. Nam a imperdiet tellus, ac dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis mauris ultricies vestibulum placerat. Pellentesque a ante faucibus ipsum dictum lobortis sit amet non eros. Donec molestie iaculis diam, vel mattis sapien aliquet sodales. Ut sit amet nisi ultrices, lacinia sem sed, sollicitudin mauris. Fusce viverra euismod nisi at malesuada. Nam fermentum.'
   }
+];
+
+$scope.skillsList1 = [
+  {name: 'International Event Coordination'},
+  {name: 'Social Media Srategy'},
+  {name: 'Branding Development'},
+  {name: 'Wedding Planner'},
+  {name: 'Brand Colaberation'},
+  {name: 'Fundraiser'},
+  {name: 'Cooperate Events Dinner Parties Fashion Shows Premiers'},
+  {name: 'Creative Consulting'},
+  {name: 'Publicity'},
+  {name: 'Photo and Gallery Production'},
+  {name: 'Book and Speaking Agent'},
+  {name: 'Sponsorship'}
 ];
 
 $scope.skillsList = [

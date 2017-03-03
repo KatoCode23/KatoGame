@@ -217,6 +217,11 @@ footer{
   color: white;
 }
 
+.fa-facebook:hover, .fa-instagram:hover, .fa-pinterest:hover, .fa-twitter:hover, .fa-imdb:hover{
+  text-decoration: none;
+  color: grey;
+}
+
 p{
   max-width: 400px;
   margin: 0 auto;
@@ -359,13 +364,14 @@ p{
 }
 
 .testimonial-paragragh{
-  color: black;
+  color: white;
   position: relative;
   top: 0;
   margin: 10px;
   padding: 5px;
   float: right;
   font-size: 25px;
+  background-color: #d2909d;
 }
 
 
@@ -397,13 +403,15 @@ p{
 .event-list-container{
   margin: 0 auto;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   position: relative;
   top: 20px;
+  background-color: #d2909d;
+  color: white;
 }
 
 .event-list-container ul{
-  list-style-type: none;
+  list-style-type: inherit;
 }
 
 .event-list-style{
@@ -432,8 +440,5 @@ p{
 }
 .event-list-style{
   font-size: 30px;
-}
-.event-list-container{
-  left: -21px;
 }
 }
