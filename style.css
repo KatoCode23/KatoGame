@@ -18,10 +18,19 @@ header{
 .main-content{
   padding: 50px;
   cursor: pointer;
+  overflow-x: hidden;
 }
 
 .meet-font{
   font-family: 'Ostrich Sans Light', arial;
+}
+
+.noel-font{
+  font-family: 'Dancing Script', cursive;
+}
+
+.noel-page-font{
+  font-family: 'Over the Rainbow', cursive;
 }
 
 a{
@@ -79,14 +88,29 @@ h2{
   background-image: url(NoelPuck/logo.png);
 }
 
-.home-page-pic, .meetNoel-page-pic, .contact-pic{
+.meetNoel-page-pic, .contact-pic{
   background-position: center;
   background-size: contain;
-  background-image: url(NoelPuck/100);
   background-repeat: no-repeat;
   height: 300px;
   position: relative;
 }
+
+.home-page-pic-container{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.home-page-pic-container .home-page-pic{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(NoelPuck/100);
+  }
 
 .meetNoel-page-pic{
   background-image: url(NoelPuck/102);
@@ -181,7 +205,8 @@ h2{
 .menu-container li{
   padding: 5px;
   display: block;
-  font-size: 20px;
+  font-size: 25px;
+  color: black;
 }
 
 .categoryStyle{
@@ -312,7 +337,7 @@ p{
 	/*-webkit-filter: grayscale(100%);*/
 }
 
-.picture-container, .logo-container{
+.picture-container, .logo-container, .home-page-press-container{
 	display: flex;
 	display: -webkit-flex;
 	flex-wrap: wrap;
@@ -343,6 +368,19 @@ p{
 	background-repeat: no-repeat;
 }
 
+.home-page-press-container .home-page-press-pic{
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+  background-position: center;
+  line-height: 100px;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  margin: 5px;
+  background-repeat: no-repeat;
+}
+
 .testimonial-pic-container{
   position: relative;
   overflow: hidden;
@@ -364,14 +402,13 @@ p{
 }
 
 .testimonial-paragragh{
-  color: white;
+  color: black;
   position: relative;
   top: 0;
   margin: 10px;
   padding: 5px;
   float: right;
   font-size: 25px;
-  background-color: #d2909d;
 }
 
 
@@ -418,6 +455,57 @@ p{
   font-size: 40px;
 }
 
+.home-image-subscribe-container{
+  background: white;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+
+  flex-direction: row;
+  -webkit-flex-direction: column;
+
+  justify-content: center;
+  -webkit-justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mailChimpStyle-container{
+  height: 80px;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#mc_embed_signup{
+  clear: left;
+  font: 14px Helvetica,Arial,sans-serif;
+  width:100%;
+}
+
+.mailChimpStyle{
+  background-color: #e3a49f;
+}
+
+.button-position{
+  display: inline-block;
+  font-family: 'Dancing Script', cursive;
+}
+
+label{
+  font-family: 'Dancing Script', cursive;
+  font-size: 15px;
+}
+
+.input-font{
+  font-family: 'Dancing Script', cursive;
+}
+
+.signUp-style{
+  padding: 10px;
+}
+
 @media (min-width: 0px)
  and (max-width: 768px) {
 
@@ -440,5 +528,12 @@ p{
 }
 .event-list-style{
   font-size: 30px;
+}
+}
+
+@media (min-width: 0px)
+ and (max-width: 414px) {
+   .home-image-subscribe-container{
+     left: -11px;
 }
 }

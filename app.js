@@ -6,6 +6,7 @@ $scope.currentTeam = {name: "none"};
 var numberOfImages= 45;
 var currentImage= null;
 var indexOfLogoImages = 228;
+var indexOfPressImages = 513;
 //$scope.imageIndexArr = [];
 //for (i = 1; i <= 31; i++) {
   //$scope.imageIndexArr.push(i);
@@ -33,9 +34,6 @@ $scope.categoryList = [
   {
    name: 'events',
     talent: [
-        {
-          name: 'Upcoming Events'
-        },
         {
           name: 'Event Services',
           link: 'services.html'
@@ -119,13 +117,13 @@ $scope.teamGallery = [
     name: 'Christina Schrieder',
     title: ' Events Manager',
     image: 'NoelPuck/102.jpg',
-    description: 'Christina has been assisting Noel Elie Productions for 4+ years. Whether she is planning weddings, coordinating events, overseeing customer relations, or brand management --theres not much this friendly face cant do!She previously managed events for several years at NYIT in NYC.'
+    description: 'Christina has been assisting Noel Elie Productions for 4+ years. Whether she is planning weddings, coordinating events, overseeing customer relations, or brand management --theres not much this friendly face cant do! She previously managed events for several years at NYIT in NYC.'
   },
   {
     name: 'Kalen Norton',
     title: 'Web Developer and Fitness Professional',
     image: 'NoelPuck/100.jpg',
-    description: 'Kalen, a web developer and fitness professional, will hand you a lifestyle you can be proud of forever. Kalen made fitness a career when he realized how much he enjoyed seeing peoples lives change in a positive way just from being fit. Through boosts in confidence, energy levels, lifestyle choices, etc..., oh and he writes code too!'
+    description: 'Kalen is a web developer and fitness professional! As a web developer he is proficient in HTML, CSS, JavaScript, and Agular 1. As a fitness specialist, he is the owner and founder of "KatoFitness".'
   }
 ];
 
@@ -186,10 +184,19 @@ $scope.skillsList = [
    {
      window.open(menu.link,'_self');
    }
-   if($(".menu-container").css('display', 'block'))
+
+   if($(".menu-container").css('display') === 'block')
    {
-      $(".menu-container").css('display', 'none');
+      $(".menu-container").hide();
+   } else if($(".menu-container").css('display') === 'none')
+   {
+      $(".menu-container").show();
    }
+
+   console.log("***********BEFORE***********")
+   console.log($(".menu-container").css('display'));
+   console.log("**********************")
+
    if(menu.name === 'skills'){
      console.log("You just clicked skill");
    }
@@ -209,6 +216,11 @@ $scope.skillsList = [
   for (var i=200; i <= indexOfLogoImages; i++){
     var element= $('<span id='+i+' style="background-image: url(NoelPuck/' + i + '.jpg)" class="logopic"></span>')
     $(".logo-container").append(element);
+  }
+
+  for (var i=500; i <= indexOfPressImages; i++){
+    var element= $('<span id='+i+' style="background-image: url(NoelPuck/' + i + '.jpg)" class="home-page-press-pic"></span>')
+    $(".home-page-press-container").append(element);
   }
 
   openImage= function(id){

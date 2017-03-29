@@ -5,10 +5,180 @@
 <body>
 
 
-<canvas id="ourFirstCanvas" width="640" height="480"></canvas>
+<!-- <canvas id="ourFirstCanvas" width="640" height="480"></canvas> -->
 
 
 <script>
+
+log = console.log;
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+Person.prototype.greet = function () {
+  log(this.name + ' is ' + this.age + ' years old.' );
+}
+
+var kalen = new Person('Kalen', 35);
+kalen.greet();
+var eleen = new Person('Eleen', 28);
+eleen.greet();
+
+log(kalen instanceof Person); //true
+log(kalen === eleen); //false
+
+function Movie(title, year){
+  this.title = title;
+  this.year = year;
+}
+
+Movie.prototype.star = function () {
+  log(this.title + ' starring Al Pacino came out in ' + this.year);
+}
+var scent = new Movie('Scent of a Woman', 1992);
+scent.star();
+
+//Section 2 of inheritance
+
+function Beverage(name, age) {
+    this.name = name;
+}
+
+Beverage.prototype.drink = function () {
+    log('I am drinking ' + this.name);
+}
+
+function Cocktail(type) {
+    Beverage.call(this, 'Cocktail');
+    this.type = type;
+}
+
+Cocktail.prototype = Object.create(Beverage.prototype);
+Cocktail.prototype.sip = function () {
+    log("Sipping some " + this.type + " " + this.name);
+}
+
+var water = new Beverage('Water');
+var oldFashioned = new Cocktail('Old Fashioned');
+water.drink();
+oldFashioned.drink();
+oldFashioned.sip();
+
+//Combining both types of inheritance
+
+function pitch(name, situation){
+  this.name = name;
+}
+
+pitch.prototype.throw = function () {
+    log('I am throwing ' + this.name);
+}
+
+function speed(type){
+  pitch.call(this, 'off speed pitch');
+  this.type = type;
+}
+
+speed.prototype = Object.create(pitch.prototype);
+speed.prototype.flick = function () {
+ log('Throwing a ' + this.type + ' ' + this.name );
+}
+var freshCount = new pitch('a fastball');
+var slider = new speed('slider');
+freshCount.throw();
+slider.throw();
+slider.flick();
+
+//Section 3 of inheritance
+
+
+var sina = {
+    name: 'Sina',
+    age: 12,
+    greet: function() {
+        log(this.name + ' is ' + this.age + ' years old');
+    }
+};
+sina.greet();
+
+var ben = Object.create(sina, {
+    name: {value: 'Ben'},
+    age: {value: 8}
+});
+
+ben.greet();
+
+//Method Practice
+
+var numbersList = [1,4,6,8,3,5,11,14,21,17,23];
+var stringList = ['coding', 'babyen', 'snowboarding', 'fitness', 'baseball'];
+
+log(numbersList.indexOf(3,2)); // position 3, 2 right
+log(stringList.splice(0,1)); // only displays the zero position
+log(numbersList.concat(stringList[2]));
+
+//Inheritance Practice Example 1
+
+function hello(gesture) {
+  this.gesture = gesture;
+}
+
+hello.prototype.meet = function(){
+  log('Hola como estas ' + this.gesture + ' happy to have met you.');
+}
+
+var kalen = new hello('fellas');
+kalen.meet();
+
+//Inheritance Practice Example 2
+
+function catostrophe(disaster){
+  this.disaster = disaster;
+}
+catostrophe.prototype.whichKind = function(){
+  log('Everything is desroyed, I think an ' + this.disaster + ' did it!');
+}
+
+var earthquake = new catostrophe('earthquake');
+earthquake.whichKind();
+
+//Second tyhpe of inheritance Example 1:
+var baseball = {
+  color: 'white',
+  seems: 108,
+  shape: 'almost a circle',
+  characteristics: function(){
+    log('A baseball is ' + this.color + ', it has ' + this.seems + ' and it is ' + this.shape + '.')
+    }
+};
+baseball.characteristics();
+
+var battingPracticeBall = Object.create(baseball, {
+  color: {value: 'green'},
+  seems: {value: 112},
+  shape: {value: 'square'}
+});
+battingPracticeBall.characteristics();
+
+function howDoYouLikeYourCoffee(size, style, name){
+  this.size = size;
+  this.style = style;
+  this.name = name;
+}
+
+howDoYouLikeYourCoffee.prototype.pourCoffee = function(){
+  log('Pouring a ' +  this.size  + ' ' +  this.style  + ' ' + 'coffee ' + 'for ' + this.name + ':).');
+}
+
+var kalenCoffee = new howDoYouLikeYourCoffee('Large', 'Black','Kalen');
+var eleenCoffee = new howDoYouLikeYourCoffee('Medium', 'Black', 'Babyen');
+
+kalenCoffee.pourCoffee();
+eleenCoffee.pourCoffee();
+
+
+
 /*function drawImage()
 {
 var ourFirstCanvas = document.getElementById("ourFirstCanvas");
