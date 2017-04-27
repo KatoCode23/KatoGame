@@ -1,76 +1,40 @@
 body{
-  background: white;
+  background: black;
   text-align: center;
   color: white;
-  font-family: Arial;
   cursor: pointer;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.bar, footer{
-  width: 100%;
+.main-content{
+  padding: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  background-image: url(EricPringle/2.PNG);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
   font-size: 45px;
   font-style: italic;
-  background-repeat: no-repeat;;
-  background-position: center;
-  background-size: cover;
-  background-image: url(EricPringle/header.jpg);
+  background-color: black;
 }
 
 a{
   text-decoration: none;
-}
-
-.picture-container{
-  top: 0;
-  padding: 5px;
-  margin: auto 0;
-  text-align: center;
-  position: relative;
-  max-width: 100%;
-  height: 500px;
-  border: solid #336e07 15px;
-}
-
-.picture{
-  background-size: contain;;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 510px;
-  margin: auto 0;
-  top: 0;
-  position: absolute;
-  left: 0%;
-}
-
-.background-image-slideshow{
-  list-style-type: none;
-}
-
-.background-image-slideshow li span{
-  opacity: 0;
-  z-index: 0;
-  animation: imageAnimation 24s linear infinite 0s;
-}
-
-.background-image-slideshow li:nth-child(1) span{
-}
-
-.background-image-slideshow li:nth-child(2) span{
-  animation-delay: 8s;
-}
-
-
-.background-image-slideshow li:nth-child(3) span{
-  animation-delay: 16s;
-}
-
-@keyframes imageAnimation {
-    0% {opacity: 0; animation-timing-function: ease in;}
-    16% {opacity: 1; animation-timing-function: ease out;}
-    33% {opacity: 0; }
-
 }
 
 footer{
@@ -80,6 +44,11 @@ footer{
   right: 0;
   padding: 10px;
   text-align: center;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  font-style: italic;
+  background-color: black;
 }
 
 .fa-facebook, .fa-instagram{
@@ -91,7 +60,7 @@ footer{
 }
 
 .fa-facebook:hover, .fa-instagram:hover{
-  color: black;
+  color: green;
 }
 
 .email a{
@@ -99,15 +68,11 @@ footer{
 }
 
 .email a:hover{
-  color: black;
+  color: green;
 }
 
-
-
-
-
 @media (min-width: 0px)
- and (max-width: 500px) {
+ and (max-width: 768px) {
   .footer{
     font-size: 17px;
   }
@@ -117,59 +82,4 @@ footer{
   .email a{
     font-size: 17px;
   }
-  .picture-container{
-    border: solid #336e07 10px;
-    height: 400px;
-  }
-  .picture{
-    height: 410px;
-  }
-}
-
-@media (min-width: 501px)
- and (max-width: 800px) {
-   .footer{
-     font-size: 17px;
-   }
-   .fa-facebook, .fa-instagram{
-     font-size: 20px;
-   }
-   .email a{
-     font-size: 17px;
-   }
-   .picture-container{
-     border: solid #336e07  10px;
-     height: 700px;
-   }
-   .picture{
-     height: 710px;
-   }
-
-
-{
-
-@media (min-width: 1000px)
- and (max-width: 2499px) {
-   .bar, footer, .fa-facebook, .fa-instagram, .email a{
-     font-size: 60px;
-   }
-   .picture-container{
-     height: 600px;
-   }
-   .picture{
-     height: 610px;
-   }
-}
-
-@media (min-width: 2500px)
- and (max-width: 3000px) {
-   .bar, footer, .fa-facebook, .fa-instagram, .email a{
-     font-size: 60px;
-   }
-   .picture-container{
-     height: 900px;
-   }
-   .picture{
-     height: 910px;
-   }
 }
