@@ -123,7 +123,7 @@ $scope.teamGallery = [
     name: 'Kalen Norton',
     title: 'Web Developer and Fitness Professional',
     image: 'NoelPuck/100.jpg',
-    description: 'Kalen is a web developer and fitness professional! As a web developer he is proficient in HTML, CSS, JavaScript, and Agular 1. As a fitness specialist, he is the owner and founder of "KatoFitness".'
+    description: 'Kalen is a web developer and fitness professional. As a web developer he is proficient in HTML, CSS, JavaScript, and Agular 1. With this set of useful skills he can and will build you an amazing website. As a fitness specialist, he is the owner and founder of "KatoFitness". A health, fitness, and lifestyle brand name designed to hand you the life you have always dreamed of.'
   }
 ];
 

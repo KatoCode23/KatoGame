@@ -22,7 +22,7 @@ header{
 }
 
 .meet-font{
-  font-family: 'Ostrich Sans Light', arial;
+  font-family: 'Felipa', cursive;
 }
 
 .noel-font{
@@ -31,6 +31,10 @@ header{
 
 .noel-page-font{
   font-family: 'Over the Rainbow', cursive;
+}
+
+.secondary-font{
+  font-family: 'Ostrich Sans Light', arial;
 }
 
 a{
@@ -210,7 +214,7 @@ h2{
 }
 
 .categoryStyle{
-  font-size: 24px;
+  font-size: 20px;
   padding: 9px;
   color: black;
 }
@@ -369,15 +373,15 @@ p{
 }
 
 .home-page-press-container .home-page-press-pic{
-  width: 250px;
-  height: 250px;
+  width: 175px;
+  height: 175px;
   background-size: contain;
   background-position: center;
   line-height: 100px;
   position: relative;
   overflow: hidden;
   padding: 10px;
-  margin: 5px;
+  margin: 10px;
   background-repeat: no-repeat;
 }
 
@@ -476,35 +480,45 @@ p{
   width: 300px;
   margin: 0 auto;
   position: relative;
+  color: white;
 }
 
 #mc_embed_signup{
   clear: left;
   font: 14px Helvetica,Arial,sans-serif;
   width:100%;
+  font-family: 'Playfair Display', serif;
 }
 
 .mailChimpStyle{
-  background-color: #e3a49f;
+  background-color: rgba(158, 158, 158, 0.46);
 }
 
 .button-position{
   display: inline-block;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Playfair Display', serif;
 }
 
 label{
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 15px;
 }
 
 .input-font{
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Playfair Display', serif;
+  color: #e3a49f;
 }
 
 .signUp-style{
   padding: 10px;
 }
+
+.button{
+  color: #e3a49f;
+}
+
+
+
 
 @media (min-width: 0px)
  and (max-width: 768px) {
