@@ -209,7 +209,7 @@ $scope.skillsList = [
   }
 
   for (var i=1; i <= numberOfImages; i++){
-  	var element= $('<span id='+i+' style="background-image: url(NoelPuck/' + i + ')" class="gallerypic"></span>')
+  	var element= $('<span id='+i+' style="background-image: url(NoelPuck/' + i + '.jpg)" class="gallerypic"></span>')
   	$(".picture-container").append(element);
   }
 
@@ -227,7 +227,7 @@ $scope.skillsList = [
   	console.log('I was asked to open '+ id);
   	console.log("I am about to open ", imagePath);
 
-  	var imagePath = 'url(NoelPuck/'+id+')';
+  	var imagePath = 'url(NoelPuck/'+id+'.jpg)';
 
   	$('.full-size-image').css('background-image', imagePath);
   	$('.full-size-image').css('display', 'block');

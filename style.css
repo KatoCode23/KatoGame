@@ -33,10 +33,6 @@ header{
   font-family: 'Over the Rainbow', cursive;
 }
 
-.secondary-font{
-  font-family: 'Ostrich Sans Light', arial;
-}
-
 a{
   text-decoration: none;
 }
@@ -113,15 +109,15 @@ h2{
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(NoelPuck/100);
+  background-image: url(NoelPuck/104.jpg);
   }
 
 .meetNoel-page-pic{
-  background-image: url(NoelPuck/102);
+  background-image: url(NoelPuck/108.jpg);
 }
 
 .contact-pic{
-  background-image: url(NoelPuck/103);
+  background-image: url(NoelPuck/103.jpg);
 }
 
 .arrow-container{
